@@ -1,7 +1,9 @@
-let todoList = []; // A centralized in-memory storage for todos
+import {TodoItem} from "../interfaces/TodoItem";
+
+let todoList:TodoItem[] = []; // A centralized in-memory storage for todos
 
 // Function to add a new todo
-function addTodo(todoItem) {
+function addTodo(todoItem:TodoItem):TodoItem {
     // if (!todo || !todo.id || !todo.text) {
     //     throw new Error("Invalid todo object. A todo must have an id and text.");
     // }
@@ -12,24 +14,25 @@ function addTodo(todoItem) {
 }
 
 // Function to delete a todo by ID
-function deleteTodo(todoID) {
-    const initialLength = todoList.length;
-
-    // Filter out the todo with the matching ID
-    todoList = todoList.filter((todo) => todo.id !== todoID);
-
-    // Return true if a todo was deleted, false otherwise
-    return initialLength !== todoList.length;
-}
+// function deleteTodo(todoID) {
+//     const initialLength = todoList.length;
+//
+//     // Filter out the todo with the matching ID
+//     todoList = todoList.filter((todo) => todo.id !== todoID);
+//
+//     // Return true if a todo was deleted, false otherwise
+//     return initialLength !== todoList.length;
+// }
 
 // Function to get all todos
-function getAllTodos() {
+function getAllTodos():TodoItem[] {
     return todoList; // Simply return the entire todo list
 }
 
+
 // Export the functions
-module.exports = {
+export {
     addTodo,
-    deleteTodo,
+    // deleteTodo,
     getAllTodos,
 };

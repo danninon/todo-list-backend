@@ -1,11 +1,15 @@
 "use strict";
-const socketIO = require("socket.io");
-const { userConnectionTokens } = require("../services/auth");
-const { addTodo, getAllTodos } = require("../data/todosDBConnctor"); // Import todo service functions
-let todoList = []; // Move this to a service layer in future iterations
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.initSocket = void 0;
+const todosDBConnctor_1 = require("../data/todosDBConnctor"); // Import todo service functions
+const auth_1 = require("../services/auth");
+const socket_io_1 = __importDefault(require("socket.io"));
 const userSocketConnections = {}; // Map socket.id to userId
 const initSocket = (server) => {
-    const io = socketIO(server, {
+    const io = new socket_io_1.default.Server(server, {
         cors: {
             origin: (origin, callback) => {
                 callback(null, true);
@@ -15,7 +19,7 @@ const initSocket = (server) => {
     io.on("connection", (socket) => {
         console.log(`⚡: ${socket.id} user just connected!`);
         socket.on("registerUser", (token) => {
-            const username = userConnectionTokens[token];
+            const username = auth_1.userConnectionTokens[token];
             if (username) {
                 userSocketConnections[socket.id] = username;
                 console.log(`User registered: ${username} with socket: ${socket.id}`);
@@ -33,16 +37,8 @@ const initSocket = (server) => {
                 return;
             }
             try {
-                // Add metadata to the todo
-                const todoWithMetadata = {
-                    ...todo,
-                    userId,
-                    timestamp: new Date().toISOString(),
-                };
-                // Add the todo using the service
-                const newTodo = addTodo(todoWithMetadata);
-                // Emit the updated todo list to all clients
-                const allTodos = getAllTodos();
+                const newTodo = (0, todosDBConnctor_1.addTodo)(todo);
+                const allTodos = (0, todosDBConnctor_1.getAllTodos)();
                 io.emit("todos", allTodos);
                 console.log("New todo added:", newTodo);
             }
@@ -57,4 +53,4 @@ const initSocket = (server) => {
         });
     });
 };
-module.exports = { initSocket };
+exports.initSocket = initSocket;

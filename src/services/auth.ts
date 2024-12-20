@@ -1,4 +1,4 @@
-const userConnectionTokens = {}; // Map token to username
-const RegisteredUser = { dan: "123", aaa: "1234" };
+const userConnectionTokens:{[key:string]:string} = {}; // Map token to username
+const RegisteredUser:{[key:string]:string} = { dan: "123", aaa: "1234" };
 
-module.exports = { userConnectionTokens, RegisteredUser };
+export { RegisteredUser, userConnectionTokens };

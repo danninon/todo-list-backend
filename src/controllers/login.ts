@@ -1,10 +1,11 @@
-const express = require("express");
-const { v4: uuidv4 } = require("uuid");
-const { userConnectionTokens, RegisteredUser } = require("../services/auth");
+import express, { Request, Response } from "express";
+import { v4 as uuidv4 } from "uuid";
+import { userConnectionTokens, RegisteredUser } from "../services/auth";
 
 const router = express.Router();
 
-router.post("/", (req, res) => {
+// @ts-ignore
+router.post("/", (req: Request, res: Response) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
@@ -20,4 +21,15 @@ router.post("/", (req, res) => {
     return res.status(401).json({ error: "Invalid username or password" });
 });
 
-module.exports = { loginRoute: router };
+
+
+export function isTokenValid(token: string): boolean {
+    if (!token) return false; // Token is undefined or empty
+
+    const username = userConnectionTokens[token]; // Retrieve username from the token
+    if (!username) return false; // Token not mapped to any username
+
+    return RegisteredUser.hasOwnProperty(username); // Check if the username exists in RegisteredUser
+}
+
+export const loginRoute = router;
