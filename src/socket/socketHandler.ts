@@ -15,6 +15,14 @@ export class SocketHandler {
     }
 
     async handleGetTodos() {
+        const userId = this.socket.data.user.id;
+        if (!userId) {
+            console.log(`Unauthorized attempt to add a todo from socket: ${this.socket.id}`);
+            const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+            this.socket.emit("error", errorResponse);
+            return;
+        }
+
         const allTodos = getAllTodos();
         const xmlResponse = new Builder().buildObject({
             todos: {
@@ -24,25 +32,26 @@ export class SocketHandler {
         this.io.emit("todos", xmlResponse);
     }
 
-    handleRegisterUser(token: string) {
-        const username = userConnectionTokens[token];
-        if (username) {
-            userSocketConnections[this.socket.id] = username;
-            console.log(`User registered: ${username} with socket: ${this.socket.id}`);
-        } else {
-            console.log(`Invalid token attempted for registration: ${token}`);
-            this.socket.disconnect();
-        }
-    }
+    // handleRegisterUser(token: string) {
+    //     const username = userConnectionTokens[token];
+    //     if (username) {
+    //         userSocketConnections[this.socket.id] = username;
+    //         console.log(`User registered: ${username} with socket: ${this.socket.id}`);
+    //     } else {
+    //         console.log(`Invalid token attempted for registration: ${token}`);
+    //         this.socket.disconnect();
+    //     }
+    // }
 
     async handleAddTodo(xmlPayload: string) {
         try {
             console.log("Received XML payload for addTodo:", xmlPayload);
+            console.log('socket.data.user',this.socket.data.user)
 
             const parsedPayload = await parseStringPromise(xmlPayload, { explicitArray: false });
             const todoPayload = parsedPayload.todo;
 
-            const userId = userSocketConnections[this.socket.id];
+            const userId = this.socket.data.user.id;
             if (!userId) {
                 console.log(`Unauthorized attempt to add a todo from socket: ${this.socket.id}`);
                 const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
@@ -67,6 +76,7 @@ export class SocketHandler {
 
             const xmlResponse = new Builder().buildObject(xmlTodos);
             this.io.emit("todos", xmlResponse);
+            console.log("New xmlResponse:", xmlResponse);
             console.log("New todo added:", newTodo);
         } catch (error) {
             console.error("Failed to add todo:", error);
@@ -88,7 +98,7 @@ export class SocketHandler {
                 return;
             }
 
-            const userId = userSocketConnections[this.socket.id];
+            const userId = this.socket.data.user.id;
             if (!userId) {
                 console.log(`Unauthorized delete attempt from socket: ${this.socket.id}`);
                 const errorResponse = new Builder().buildObject({ error: "Unauthorized" });

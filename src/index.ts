@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/login", loginRoute);
+app.use("/auth", loginRoute);
 app.use("/api", todoRoute);
 
 // Initialize Socket.IO
