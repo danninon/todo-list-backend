@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initSocket = void 0;
-const todosDBConnctor_1 = require("../data/todosDBConnctor"); // Import todo service functions
+const dal_1 = require("../data/dal"); // Import todo service functions
 const auth_1 = require("../services/auth");
 const socket_io_1 = __importDefault(require("socket.io"));
 const userSocketConnections = {}; // Map socket.id to userId
@@ -29,7 +29,7 @@ const initSocket = (server) => {
                 socket.disconnect();
             }
         });
-        socket.on("addTodo", (todo) => {
+        socket.on("addTodo", (todoPayload) => {
             const userId = userSocketConnections[socket.id];
             if (!userId) {
                 console.log(`Unauthorized attempt to add a todo from socket: ${socket.id}`);
@@ -37,8 +37,13 @@ const initSocket = (server) => {
                 return;
             }
             try {
-                const newTodo = (0, todosDBConnctor_1.addTodo)(todo);
-                const allTodos = (0, todosDBConnctor_1.getAllTodos)();
+                const todoWithoutID = {
+                    text: todoPayload.text,
+                    timeStamp: new Date(todoPayload.timestamp),
+                    userId: userSocketConnections[socket.id]
+                };
+                const newTodo = (0, dal_1.addTodo)(todoWithoutID);
+                const allTodos = (0, dal_1.getAllTodos)();
                 io.emit("todos", allTodos);
                 console.log("New todo added:", newTodo);
             }

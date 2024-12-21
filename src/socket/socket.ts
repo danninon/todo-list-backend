@@ -1,9 +1,10 @@
 import { Server } from "http";
 import { Socket } from "socket.io";
 import { TodoItem } from "../interfaces/TodoItem";
-import { addTodo, getAllTodos } from "../data/todosDBConnctor"; // Import todo service functions
+import { addTodo, getAllTodos } from "../data/dal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
 import socketIO, { Server as IOServer } from "socket.io";
+import {TodoItemPayload} from "../interfaces/TodoItemPayload";
 
 const userSocketConnections: { [key: string]: string } = {}; // Map socket.id to userId
 
@@ -30,7 +31,7 @@ export const initSocket = (server: Server): void => {
             }
         });
 
-        socket.on("addTodo", (todo: TodoItem) => {
+        socket.on("addTodo", (todoPayload: TodoItemPayload) => {
             const userId = userSocketConnections[socket.id];
             if (!userId) {
                 console.log(`Unauthorized attempt to add a todo from socket: ${socket.id}`);
@@ -39,7 +40,13 @@ export const initSocket = (server: Server): void => {
             }
 
             try {
-                const newTodo = addTodo(todo);
+                const todoWithoutID: Omit<TodoItem, "id"> = {
+                    text: todoPayload.text,
+                    timeStamp: new Date(todoPayload.timestamp),
+                    userId: userSocketConnections[socket.id]
+                };
+
+                const newTodo = addTodo(todoWithoutID);
                 const allTodos = getAllTodos();
                 io.emit("todos", allTodos);
 

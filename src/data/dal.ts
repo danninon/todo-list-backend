@@ -1,13 +1,15 @@
 import {TodoItem} from "../interfaces/TodoItem";
+import { v4 as uuidv4 } from "uuid";
 
 let todoList:TodoItem[] = []; // A centralized in-memory storage for todos
 
 // Function to add a new todo
-function addTodo(todoItem:TodoItem):TodoItem {
-    // if (!todo || !todo.id || !todo.text) {
-    //     throw new Error("Invalid todo object. A todo must have an id and text.");
-    // }
+function addTodo(todoItemWithoutID:Omit<TodoItem, "id">):TodoItem {
 
+    const todoItem: TodoItem = {
+        ...todoItemWithoutID,
+        id: uuidv4(), // Generate a unique ID
+    };
     // Add the todo to the beginning of the list
     todoList.unshift(todoItem);
     return todoItem; // Return the added todo for confirmation

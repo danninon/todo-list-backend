@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.loginRoute = void 0;
+exports.isTokenValid = isTokenValid;
 const express_1 = __importDefault(require("express"));
 const uuid_1 = require("uuid");
 const auth_1 = require("../services/auth");
@@ -21,4 +22,12 @@ router.post("/", (req, res) => {
     }
     return res.status(401).json({ error: "Invalid username or password" });
 });
+function isTokenValid(token) {
+    if (!token)
+        return false; // Token is undefined or empty
+    const username = auth_1.userConnectionTokens[token]; // Retrieve username from the token
+    if (!username)
+        return false; // Token not mapped to any username
+    return auth_1.RegisteredUser.hasOwnProperty(username); // Check if the username exists in RegisteredUser
+}
 exports.loginRoute = router;

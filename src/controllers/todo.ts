@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import { getAllTodos } from "../data/todosDBConnctor"; // Import the getAllTodos function
+import { getAllTodos } from "../data/dal"; // Import the getAllTodos function
 import { TodoItem } from "../interfaces/TodoItem"; // Import the TodoItem interface
 
 const router = express.Router();

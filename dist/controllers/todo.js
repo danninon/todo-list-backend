@@ -5,12 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.todoRoute = void 0;
 const express_1 = __importDefault(require("express"));
-const todosDBConnctor_1 = require("../data/todosDBConnctor"); // Import the getAllTodos function
+const dal_1 = require("../data/dal"); // Import the getAllTodos function
 const router = express_1.default.Router();
 // Route to fetch all todos
 router.get("/", (req, res) => {
     try {
-        const todos = (0, todosDBConnctor_1.getAllTodos)(); // Retrieve all todos from the service
+        const todos = (0, dal_1.getAllTodos)(); // Retrieve all todos from the service
         res.status(200).json(todos); // Respond with the todos
     }
     catch (error) {
