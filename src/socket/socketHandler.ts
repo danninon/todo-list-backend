@@ -2,16 +2,19 @@ import {Server as IOServer, Socket} from "socket.io";
 import { Builder, parseStringPromise } from "xml2js";
 import { addTodo, getAllTodos, deleteTodo } from "../data/dal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
+import {DataValidator} from "../data/validator";
 
 const userSocketConnections: { [key: string]: string } = {}; // Map socket.id to userId
 
 export class SocketHandler {
     private socket: Socket;
     private io: IOServer;
+    private dataValidator: DataValidator;
 
     constructor(socket: Socket, io: IOServer) {
         this.socket = socket;
         this.io = io;
+        this.dataValidator = new DataValidator();
     }
 
     async handleGetTodos() {
@@ -65,6 +68,8 @@ export class SocketHandler {
                 userId,
             };
 
+           this.dataValidator.validate(todoWithoutID);
+
             const newTodo = addTodo(todoWithoutID);
             const allTodos = getAllTodos();
 
@@ -79,12 +84,14 @@ export class SocketHandler {
             console.log("New xmlResponse:", xmlResponse);
             console.log("New todo added:", newTodo);
         } catch (error) {
-            console.error("Failed to add todo:", error);
-            const errorResponse = new Builder().buildObject({ error: "Failed to add todo" });
+            const errorMessage = `Failed to add todo, ${error}`;
+            console.error(errorMessage);
+            const errorResponse = new Builder().buildObject({ error: errorMessage});
             this.socket.emit("error", errorResponse);
         }
     }
 
+    //TODO?: add validation
     async handleDeleteTodo(xmlPayload: string) {
         try {
             console.log("Received XML payload for deleteTodo:", xmlPayload);
