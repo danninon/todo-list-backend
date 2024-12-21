@@ -4,7 +4,7 @@ import { TodoItem } from "../interfaces/TodoItem";
 import { addTodo, getAllTodos, deleteTodo } from "../data/dal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
 import socketIO, { Server as IOServer } from "socket.io";
-import {TodoItemPayload} from "../interfaces/TodoItemPayload";
+import { parseStringPromise, Builder } from "xml2js";
 
 const userSocketConnections: { [key: string]: string } = {}; // Map socket.id to userId
 
@@ -31,53 +31,110 @@ export const initSocket = (server: Server): void => {
             }
         });
 
-        socket.on("addTodo", (todoPayload: TodoItemPayload) => {
-            const userId = userSocketConnections[socket.id];
-            if (!userId) {
-                console.log(`Unauthorized attempt to add a todo from socket: ${socket.id}`);
-                socket.emit("error", { message: "Unauthorized" }); // Emit an error message to the client
-                return;
-            }
-
+        socket.on("addTodo", async (xmlPayload: string) => {
             try {
+                console.log("xmlPayload ", xmlPayload);
+
+                // Parse the incoming XML payload to a JavaScript object
+                const parsedPayload = await parseStringPromise(xmlPayload, {
+                    explicitArray: false,
+                });
+                console.log("parsedPayload ", parsedPayload);
+
+                const todoPayload = parsedPayload.todo; // Extract the todo object
+
+                // Check if the user is authorized
+                const userId = userSocketConnections[socket.id];
+                if (!userId) {
+                    console.log(`Unauthorized attempt to add a todo from socket: ${socket.id}`);
+                    const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+                    socket.emit("error", errorResponse); // Emit an error in XML format
+                    return;
+                }
+
+                // Construct the TodoItem object without an ID
                 const todoWithoutID: Omit<TodoItem, "id"> = {
                     text: todoPayload.text,
-                    timeStamp: new Date(todoPayload.timestamp),
-                    userId: userSocketConnections[socket.id]
+                    timeStamp: todoPayload.timestamp,
+                    userId,
                 };
 
+                // Add the todo and retrieve the updated list
                 const newTodo = addTodo(todoWithoutID);
                 const allTodos = getAllTodos();
-                io.emit("todos", allTodos);
 
+                // Construct the XML response with proper nesting
+                const xmlTodos = {
+                    todos: {
+                        todo: allTodos, // Ensure allTodos is an array of properly structured items
+                    },
+                };
+
+                console.log('xmlTodos ', JSON.stringify(xmlTodos));
+
+                // Convert the JavaScript object to XML
+                const xmlResponse = new Builder().buildObject(xmlTodos);
+
+                console.log('xmlResponse ', xmlResponse);
+
+
+                io.emit("todos", xmlResponse); // Emit the updated todo list in XML format
                 console.log("New todo added:", newTodo);
             } catch (error) {
                 console.error("Failed to add todo:", error);
-                socket.emit("error", { message: "Failed to add todo" }); // Notify the client about the error
+                const errorResponse = new Builder().buildObject({ error: "Failed to add todo" });
+                socket.emit("error", errorResponse); // Emit an error in XML format
             }
         });
 
-        socket.on("deleteTodo", ({ id }: { id: string }) => {
-            const userId = userSocketConnections[socket.id];
-            if (!userId) {
-                console.log(`Unauthorized delete attempt from socket: ${socket.id}`);
-                socket.emit("error", { message: "Unauthorized" });
-                return;
-            }
-
+        socket.on("deleteTodo", async (xmlPayload: string) => {
             try {
-                const success = deleteTodo(id);
+                console.log("Received XML payload for deleteTodo:", xmlPayload);
+
+                // Parse the incoming XML payload to extract the todo ID
+                const parsedPayload = await parseStringPromise(xmlPayload, {
+                    explicitArray: false,
+                });
+                console.log("Parsed deleteTodo payload:", parsedPayload);
+
+                const todoId = parsedPayload.todo?.id; // Extract the todo ID
+                if (!todoId) {
+                    const errorResponse = new Builder().buildObject({ error: "Invalid payload: Missing todo ID" });
+                    socket.emit("error", errorResponse);
+                    return;
+                }
+
+                // Check if the user is authorized
+                const userId = userSocketConnections[socket.id];
+                if (!userId) {
+                    console.log(`Unauthorized delete attempt from socket: ${socket.id}`);
+                    const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+                    socket.emit("error", errorResponse);
+                    return;
+                }
+
+                // Attempt to delete the todo
+                const success = deleteTodo(todoId);
                 if (success) {
                     const allTodos = getAllTodos(); // Retrieve the updated todo list
-                    io.emit("todos", allTodos); // Broadcast the updated list to all clients
-                    console.log(`Todo with id ${id} deleted successfully.`);
+
+                    // Construct the XML response for the updated list
+                    const xmlResponse = new Builder().buildObject({
+                        todos: {
+                            todo: allTodos, // Ensure allTodos is properly structured
+                        },
+                    });
+                    io.emit("todos", xmlResponse); // Broadcast the updated list in XML format
+                    console.log(`Todo with id ${todoId} deleted successfully.`);
                 } else {
-                    console.log(`Failed to delete todo with id ${id}.`);
-                    socket.emit("error", { message: "Todo not found or deletion failed" });
+                    console.log(`Failed to delete todo with id ${todoId}.`);
+                    const errorResponse = new Builder().buildObject({ error: "Todo not found or deletion failed" });
+                    socket.emit("error", errorResponse);
                 }
             } catch (error) {
                 console.error("Error deleting todo:", error);
-                socket.emit("error", { message: "Error deleting todo" });
+                const errorResponse = new Builder().buildObject({ error: "Error processing deleteTodo request" });
+                socket.emit("error", errorResponse);
             }
         });
 

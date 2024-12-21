@@ -6,7 +6,6 @@ const { loginRoute } = require("./controllers/login");
 const { todoRoute } = require("./controllers/todo");
 const { PORT } = require("./config/constants");
 
-
 const app = express();
 const server = http.createServer(app);
 

@@ -1,7 +1,7 @@
 interface TodoItem{
     id: string;
     text: string;
-    timeStamp: Date;
+    timeStamp: string;
     userId: string
 }
 
