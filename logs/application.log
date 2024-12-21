@@ -1,0 +1,30 @@
+[2024-12-21T18:42:12.370] [INFO] default - Server running on http://localhost:[object Object]
+[2024-12-21T18:43:26.981] [INFO] default - Server running on http://localhost:4000
+[2024-12-21T18:56:07.256] [INFO] default - Server running on http://localhost:4000
+[2024-12-21T18:56:33.629] [INFO] default - Received login request
+[2024-12-21T18:56:33.631] [INFO] default - Login successful for user: dan
+[2024-12-21T18:56:33.660] [INFO] default - ⚡: T52Es2oE6Z5SxPi8AAAC user just connected!
+[2024-12-21T18:56:33.665] [INFO] default - In 'getAllTodos'
+[2024-12-21T18:56:42.266] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>adsf</text>
+  <timestamp>2024-12-21T16:56:42.265Z</timestamp>
+</todo>
+[2024-12-21T18:56:42.269] [INFO] default - Adding todo item with ID: { text: 'adsf', timeStamp: '2024-12-21T16:56:42.265Z', userId: 'dan' }
+[2024-12-21T18:56:42.269] [INFO] default - In 'getAllTodos'
+[2024-12-21T18:56:42.270] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <text>adsf</text>
+    <timeStamp>2024-12-21T16:56:42.265Z</timeStamp>
+    <userId>dan</userId>
+    <id>1ba50fe5-eea6-41eb-8695-a6b8f8f7c261</id>
+  </todo>
+</todos>
+[2024-12-21T18:56:49.391] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>1ba50fe5-eea6-41eb-8695-a6b8f8f7c261</id>
+</todo>
+[2024-12-21T18:56:49.391] [INFO] default - Deleting todo item with ID: 1ba50fe5-eea6-41eb-8695-a6b8f8f7c261
+[2024-12-21T18:56:49.391] [INFO] default - In 'getAllTodos'
+[2024-12-21T18:56:49.392] [INFO] default - Todo with id 1ba50fe5-eea6-41eb-8695-a6b8f8f7c261 deleted successfully.

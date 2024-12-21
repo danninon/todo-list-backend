@@ -1,11 +1,12 @@
 import {TodoItem} from "../interfaces/TodoItem";
 import { v4 as uuidv4 } from "uuid";
+import logger from "../libs/logger";
 
 let todoList:TodoItem[] = []; // A centralized in-memory storage for todos
 
 // Function to add a new todo
 function addTodo(todoItemWithoutID:Omit<TodoItem, "id">):TodoItem {
-
+    logger.info("Adding todo item with ID:", todoItemWithoutID);
     const todoItem: TodoItem = {
         ...todoItemWithoutID,
         id: uuidv4(), // Generate a unique ID
@@ -17,6 +18,7 @@ function addTodo(todoItemWithoutID:Omit<TodoItem, "id">):TodoItem {
 
 // Function to delete a todo by ID
 function deleteTodo(todoId:string):boolean {
+    logger.info("Deleting todo item with ID:", todoId);
     const initialLength = todoList.length; // Save the initial length of the list
 
     // Filter out the TodoItem with the matching ID
@@ -28,6 +30,7 @@ function deleteTodo(todoId:string):boolean {
 
 // Function to get all todos
 function getAllTodos():TodoItem[] {
+    logger.info("In 'getAllTodos'");
     return todoList; // Simply return the entire todo list
 }
 

@@ -1,10 +1,11 @@
-const express = require("express");
-const cors = require("cors");
-const http = require("http");
-const { initSocketServer } = require("./socket/socket");
-const { loginRoute } = require("./controllers/login");
-const { todoRoute } = require("./controllers/todo");
-const { PORT } = require("./config/constants");
+import express from "express";
+import cors from "cors";
+import http from "http";
+import { initSocketServer } from "./socket/socket";
+import { loginRoute } from "./controllers/login";
+// import { todoRoute } from "./controllers/todo";
+import  logger  from "./libs/logger"; // Ensure logger is imported
+import config from './config/default';
 
 const app = express();
 const server = http.createServer(app);
@@ -16,12 +17,12 @@ app.use(cors());
 
 // Routes
 app.use("/auth", loginRoute);
-app.use("/api", todoRoute);
+// app.use("/api", todoRoute);
 
 // Initialize Socket.IO
 initSocketServer(server);
 
 // Start the server
-server.listen(PORT, () => {
-    console.log(`Server listening on http://localhost:${PORT}`);
+server.listen(config.port, () => {
+    logger.info(`Server running on http://localhost:${config.port}`);
 });
