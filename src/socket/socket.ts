@@ -20,6 +20,16 @@ export const initSocket = (server: Server): void => {
     io.on("connection", (socket: Socket) => {
         console.log(`⚡: ${socket.id} user just connected!`);
 
+        socket.on("getTodos", () => {
+            const allTodos = getAllTodos(); // Retrieve the current list of todos
+            const xmlResponse = new Builder().buildObject({
+                todos: {
+                    todo: allTodos, // Ensure allTodos is properly structured
+                },
+            });
+            socket.emit("todos", xmlResponse); // Send the XML response to the client
+        });
+
         socket.on("registerUser", (token: string) => {
             const username = userConnectionTokens[token];
             if (username) {
