@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const http = require("http");
-const { initSocket } = require("./socket/socket");
+const { initSocketServer } = require("./socket/socket");
 const { loginRoute } = require("./controllers/login");
 const { todoRoute } = require("./controllers/todo");
 const { PORT } = require("./config/constants");
@@ -19,7 +19,7 @@ app.use("/login", loginRoute);
 app.use("/api", todoRoute);
 
 // Initialize Socket.IO
-initSocket(server);
+initSocketServer(server);
 
 // Start the server
 server.listen(PORT, () => {
