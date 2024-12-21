@@ -16,15 +16,15 @@ function addTodo(todoItemWithoutID:Omit<TodoItem, "id">):TodoItem {
 }
 
 // Function to delete a todo by ID
-// function deleteTodo(todoID) {
-//     const initialLength = todoList.length;
-//
-//     // Filter out the todo with the matching ID
-//     todoList = todoList.filter((todo) => todo.id !== todoID);
-//
-//     // Return true if a todo was deleted, false otherwise
-//     return initialLength !== todoList.length;
-// }
+function deleteTodo(todoId:string):boolean {
+    const initialLength = todoList.length; // Save the initial length of the list
+
+    // Filter out the TodoItem with the matching ID
+    todoList = todoList.filter((todo) => todo.id !== todoId);
+
+    // Check if the length has changed (indicating deletion occurred)
+    return todoList.length < initialLength;
+}
 
 // Function to get all todos
 function getAllTodos():TodoItem[] {
@@ -35,6 +35,6 @@ function getAllTodos():TodoItem[] {
 // Export the functions
 export {
     addTodo,
-    // deleteTodo,
+    deleteTodo,
     getAllTodos,
 };

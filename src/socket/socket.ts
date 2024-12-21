@@ -1,7 +1,7 @@
 import { Server } from "http";
 import { Socket } from "socket.io";
 import { TodoItem } from "../interfaces/TodoItem";
-import { addTodo, getAllTodos } from "../data/dal"; // Import todo service functions
+import { addTodo, getAllTodos, deleteTodo } from "../data/dal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
 import socketIO, { Server as IOServer } from "socket.io";
 import {TodoItemPayload} from "../interfaces/TodoItemPayload";
@@ -54,6 +54,30 @@ export const initSocket = (server: Server): void => {
             } catch (error) {
                 console.error("Failed to add todo:", error);
                 socket.emit("error", { message: "Failed to add todo" }); // Notify the client about the error
+            }
+        });
+
+        socket.on("deleteTodo", ({ id }: { id: string }) => {
+            const userId = userSocketConnections[socket.id];
+            if (!userId) {
+                console.log(`Unauthorized delete attempt from socket: ${socket.id}`);
+                socket.emit("error", { message: "Unauthorized" });
+                return;
+            }
+
+            try {
+                const success = deleteTodo(id);
+                if (success) {
+                    const allTodos = getAllTodos(); // Retrieve the updated todo list
+                    io.emit("todos", allTodos); // Broadcast the updated list to all clients
+                    console.log(`Todo with id ${id} deleted successfully.`);
+                } else {
+                    console.log(`Failed to delete todo with id ${id}.`);
+                    socket.emit("error", { message: "Todo not found or deletion failed" });
+                }
+            } catch (error) {
+                console.error("Error deleting todo:", error);
+                socket.emit("error", { message: "Error deleting todo" });
             }
         });
 
