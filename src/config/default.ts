@@ -7,6 +7,7 @@ export default {
     port: process.env.PORT || 4000,
     // apiBaseUrl: process.env.API_BASE_URL || 'http://api.weatherapi.com/v1',
     environment: process.env.NODE_ENV || 'development',
+    jwtSecret: process.env.JWT_SECRET || 'my_secret_key'
     // swaggerURL: process.env.SWAGGER_URL || '/api-docs',
     // axios: {
     //     timeout: 10000,

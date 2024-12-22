@@ -4,6 +4,7 @@ import { SocketHandler } from "./socketHandler";
 import socketIO, { Server as IOServer } from "socket.io";
 import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
+import config from "../config/default";
 
 export const initSocketServer = (server: Server): void => {
     const io: IOServer = new socketIO.Server(server, {
@@ -15,6 +16,7 @@ export const initSocketServer = (server: Server): void => {
     });
 
     io.use((socket, next) => {
+        logger.info("On io.use(socket,next)=>{....}");
         const token = socket.handshake.auth.token;
         if (!token) {
             logger.error("Authentication error: No token provided");
@@ -22,7 +24,7 @@ export const initSocketServer = (server: Server): void => {
         }
 
         try {
-            const decoded = jwt.verify(token, "your_secret_key");
+            const decoded = jwt.verify(token, config.jwtSecret);
             console.log("decoded ", decoded);
             socket.data.user = decoded; // Attach decoded user info to the socket
             next(); // Allow the connection

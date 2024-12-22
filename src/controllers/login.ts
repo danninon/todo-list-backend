@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { userConnectionTokens, RegisteredUser } from "../services/auth";
 import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
+import config from "../config/default";
 
 const router = express.Router();
 
@@ -20,8 +21,12 @@ router.post("/login", (req: Request, res: Response) => {
     }
 
     if (RegisteredUser[username] && RegisteredUser[username] === password) {
-        const token = jwt.sign({ id: username, username }, "your_secret_key", { expiresIn: "1h" });
-        userConnectionTokens[token] = username;
+        const token = jwt.sign(
+    { id: username, username },
+            config.jwtSecret,
+    { expiresIn: "1h" }
+        );
+
 
         logger.info(`Login successful for user: ${username}`);
         return res.status(200).json({ message: "Login successful", token });
