@@ -2377,3 +2377,2737 @@
   rowAsArray: false,
   _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
 }
+[2024-12-22T15:52:53.317] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:52:53.323] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:52:53.677] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:52:53.684] [INFO] default - ⚡: UwLWUsSvNCj6TazlAAAC user just connected!
+[2024-12-22T15:52:53.690] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:52:53.716] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 9,
+  oid: null,
+  rows: [
+    {
+      id: 1,
+      text: 'p[o[',
+      timeStamp: '2024-12-22T13:23:24.519Z',
+      userId: 'dan'
+    },
+    {
+      id: 2,
+      text: 'jkl;',
+      timeStamp: '2024-12-22T13:24:38.670Z',
+      userId: 'dan'
+    },
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:52:55.187] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>1</id>
+</todo>
+[2024-12-22T15:52:55.189] [INFO] default - Deleting todo item with ID: 1
+[2024-12-22T15:52:55.240] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:52:55.241] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 8,
+  oid: null,
+  rows: [
+    {
+      id: 2,
+      text: 'jkl;',
+      timeStamp: '2024-12-22T13:24:38.670Z',
+      userId: 'dan'
+    },
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:52:55.243] [INFO] default - Todo with id 1 deleted successfully.
+[2024-12-22T15:52:55.614] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>2</id>
+</todo>
+[2024-12-22T15:52:55.614] [INFO] default - Deleting todo item with ID: 2
+[2024-12-22T15:52:55.659] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:52:55.660] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 7,
+  oid: null,
+  rows: [
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:52:55.662] [INFO] default - Todo with id 2 deleted successfully.
+[2024-12-22T15:53:06.086] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:53:06.089] [INFO] default - ⚡: eCyApkG5bPDfl0-wAAAF user just connected!
+[2024-12-22T15:53:06.093] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:06.105] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 7,
+  oid: null,
+  rows: [
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:10.967] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:53:10.968] [INFO] default - ⚡: N-XIA0QxzuScu4YSAAAH user just connected!
+[2024-12-22T15:53:10.973] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:10.975] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 7,
+  oid: null,
+  rows: [
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:15.672] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>3</id>
+</todo>
+[2024-12-22T15:53:15.673] [INFO] default - Deleting todo item with ID: 3
+[2024-12-22T15:53:15.719] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:15.720] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 6,
+  oid: null,
+  rows: [
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:15.722] [INFO] default - Todo with id 3 deleted successfully.
+[2024-12-22T15:53:16.908] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>jjjtjhfhgfdr</text>
+  <timestamp>2024-12-22T13:53:16.907Z</timestamp>
+</todo>
+[2024-12-22T15:53:16.909] [INFO] default - Adding todo item1234: {
+  text: 'jjjtjhfhgfdr',
+  timeStamp: '2024-12-22T13:53:16.907Z',
+  userId: 'dan'
+}
+[2024-12-22T15:53:16.909] [INFO] default - values: [ 'jjjtjhfhgfdr', '2024-12-22T13:53:16.907Z', 'dan' ]
+[2024-12-22T15:53:16.960] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:16.961] [INFO] default - newTodo(back from db):  {
+  id: 13,
+  text: 'jjjtjhfhgfdr',
+  timeStamp: '2024-12-22T13:53:16.907Z',
+  userId: 'dan'
+}
+[2024-12-22T15:53:16.961] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:16.963] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 7,
+  oid: null,
+  rows: [
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:16.964] [INFO] default - allTodos(back from db):  [
+  {
+    id: 7,
+    text: 'asdfasdf',
+    timeStamp: '2024-12-22T13:31:05.224Z',
+    userId: 'dan'
+  },
+  {
+    id: 8,
+    text: 'uryury',
+    timeStamp: '2024-12-22T13:31:19.708Z',
+    userId: 'dan'
+  },
+  {
+    id: 9,
+    text: 'dfasdfasd',
+    timeStamp: '2024-12-22T13:32:12.326Z',
+    userId: 'dan'
+  },
+  {
+    id: 10,
+    text: 'asdf',
+    timeStamp: '2024-12-22T13:36:39.405Z',
+    userId: 'dan'
+  },
+  {
+    id: 11,
+    text: 'fghf',
+    timeStamp: '2024-12-22T13:49:06.389Z',
+    userId: 'dan'
+  },
+  {
+    id: 12,
+    text: 'dan',
+    timeStamp: '2024-12-22T13:49:36.350Z',
+    userId: 'dan'
+  },
+  {
+    id: 13,
+    text: 'jjjtjhfhgfdr',
+    timeStamp: '2024-12-22T13:53:16.907Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:53:16.965] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>7</id>
+    <text>asdfasdf</text>
+    <timeStamp>2024-12-22T13:31:05.224Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>8</id>
+    <text>uryury</text>
+    <timeStamp>2024-12-22T13:31:19.708Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>9</id>
+    <text>dfasdfasd</text>
+    <timeStamp>2024-12-22T13:32:12.326Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>10</id>
+    <text>asdf</text>
+    <timeStamp>2024-12-22T13:36:39.405Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>11</id>
+    <text>fghf</text>
+    <timeStamp>2024-12-22T13:49:06.389Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>12</id>
+    <text>dan</text>
+    <timeStamp>2024-12-22T13:49:36.350Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>13</id>
+    <text>jjjtjhfhgfdr</text>
+    <timeStamp>2024-12-22T13:53:16.907Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T15:53:20.474] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>7</id>
+</todo>
+[2024-12-22T15:53:20.474] [INFO] default - Deleting todo item with ID: 7
+[2024-12-22T15:53:20.520] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:20.521] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 6,
+  oid: null,
+  rows: [
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:20.522] [INFO] default - Todo with id 7 deleted successfully.
+[2024-12-22T15:53:20.800] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>8</id>
+</todo>
+[2024-12-22T15:53:20.800] [INFO] default - Deleting todo item with ID: 8
+[2024-12-22T15:53:20.848] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:20.849] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:20.851] [INFO] default - Todo with id 8 deleted successfully.
+[2024-12-22T15:53:21.065] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>9</id>
+</todo>
+[2024-12-22T15:53:21.065] [INFO] default - Deleting todo item with ID: 9
+[2024-12-22T15:53:21.110] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:21.111] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 4,
+  oid: null,
+  rows: [
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:21.113] [INFO] default - Todo with id 9 deleted successfully.
+[2024-12-22T15:53:22.352] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>jkl;jkl;jkl;jkl</text>
+  <timestamp>2024-12-22T13:53:22.351Z</timestamp>
+</todo>
+[2024-12-22T15:53:22.352] [INFO] default - Adding todo item1234: {
+  text: 'jkl;jkl;jkl;jkl',
+  timeStamp: '2024-12-22T13:53:22.351Z',
+  userId: 'dan'
+}
+[2024-12-22T15:53:22.353] [INFO] default - values: [ 'jkl;jkl;jkl;jkl', '2024-12-22T13:53:22.351Z', 'dan' ]
+[2024-12-22T15:53:22.400] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:22.401] [INFO] default - newTodo(back from db):  {
+  id: 14,
+  text: 'jkl;jkl;jkl;jkl',
+  timeStamp: '2024-12-22T13:53:22.351Z',
+  userId: 'dan'
+}
+[2024-12-22T15:53:22.401] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:53:22.402] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:53:22.403] [INFO] default - allTodos(back from db):  [
+  {
+    id: 10,
+    text: 'asdf',
+    timeStamp: '2024-12-22T13:36:39.405Z',
+    userId: 'dan'
+  },
+  {
+    id: 11,
+    text: 'fghf',
+    timeStamp: '2024-12-22T13:49:06.389Z',
+    userId: 'dan'
+  },
+  {
+    id: 12,
+    text: 'dan',
+    timeStamp: '2024-12-22T13:49:36.350Z',
+    userId: 'dan'
+  },
+  {
+    id: 13,
+    text: 'jjjtjhfhgfdr',
+    timeStamp: '2024-12-22T13:53:16.907Z',
+    userId: 'dan'
+  },
+  {
+    id: 14,
+    text: 'jkl;jkl;jkl;jkl',
+    timeStamp: '2024-12-22T13:53:22.351Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:53:22.404] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>10</id>
+    <text>asdf</text>
+    <timeStamp>2024-12-22T13:36:39.405Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>11</id>
+    <text>fghf</text>
+    <timeStamp>2024-12-22T13:49:06.389Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>12</id>
+    <text>dan</text>
+    <timeStamp>2024-12-22T13:49:36.350Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>13</id>
+    <text>jjjtjhfhgfdr</text>
+    <timeStamp>2024-12-22T13:53:16.907Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>14</id>
+    <text>jkl;jkl;jkl;jkl</text>
+    <timeStamp>2024-12-22T13:53:22.351Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T15:54:07.910] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:54:07.911] [INFO] default - ⚡: 3TtazAZHP9XiP97zAAAK user just connected!
+[2024-12-22T15:54:07.917] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:54:07.930] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:54:11.258] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>10</id>
+</todo>
+[2024-12-22T15:54:11.258] [INFO] default - Deleting todo item with ID: 10
+[2024-12-22T15:54:11.308] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:54:11.309] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 4,
+  oid: null,
+  rows: [
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:54:11.311] [INFO] default - Todo with id 10 deleted successfully.
+[2024-12-22T15:54:13.784] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfasdfas</text>
+  <timestamp>2024-12-22T13:54:13.784Z</timestamp>
+</todo>
+[2024-12-22T15:54:13.785] [INFO] default - Adding todo item1234: {
+  text: 'asdfasdfas',
+  timeStamp: '2024-12-22T13:54:13.784Z',
+  userId: 'dan'
+}
+[2024-12-22T15:54:13.785] [INFO] default - values: [ 'asdfasdfas', '2024-12-22T13:54:13.784Z', 'dan' ]
+[2024-12-22T15:54:13.836] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:54:13.837] [INFO] default - newTodo(back from db):  {
+  id: 15,
+  text: 'asdfasdfas',
+  timeStamp: '2024-12-22T13:54:13.784Z',
+  userId: 'dan'
+}
+[2024-12-22T15:54:13.837] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:54:13.838] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:54:13.839] [INFO] default - allTodos(back from db):  [
+  {
+    id: 11,
+    text: 'fghf',
+    timeStamp: '2024-12-22T13:49:06.389Z',
+    userId: 'dan'
+  },
+  {
+    id: 12,
+    text: 'dan',
+    timeStamp: '2024-12-22T13:49:36.350Z',
+    userId: 'dan'
+  },
+  {
+    id: 13,
+    text: 'jjjtjhfhgfdr',
+    timeStamp: '2024-12-22T13:53:16.907Z',
+    userId: 'dan'
+  },
+  {
+    id: 14,
+    text: 'jkl;jkl;jkl;jkl',
+    timeStamp: '2024-12-22T13:53:22.351Z',
+    userId: 'dan'
+  },
+  {
+    id: 15,
+    text: 'asdfasdfas',
+    timeStamp: '2024-12-22T13:54:13.784Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:54:13.840] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>11</id>
+    <text>fghf</text>
+    <timeStamp>2024-12-22T13:49:06.389Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>12</id>
+    <text>dan</text>
+    <timeStamp>2024-12-22T13:49:36.350Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>13</id>
+    <text>jjjtjhfhgfdr</text>
+    <timeStamp>2024-12-22T13:53:16.907Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>14</id>
+    <text>jkl;jkl;jkl;jkl</text>
+    <timeStamp>2024-12-22T13:53:22.351Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>15</id>
+    <text>asdfasdfas</text>
+    <timeStamp>2024-12-22T13:54:13.784Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T16:44:47.424] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T16:44:47.430] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T16:44:47.604] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T16:44:47.607] [INFO] default - ⚡: ezdtY0sla_BZneawAAAB user just connected!
+[2024-12-22T16:45:00.132] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T16:45:00.134] [INFO] default - ⚡: ctgWcAszK1Meh8RtAAAE user just connected!
+[2024-12-22T16:45:00.138] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:45:00.181] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:45:01.775] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T16:45:01.778] [INFO] default - ⚡: 06jktgTdL9lS5oCtAAAH user just connected!
+[2024-12-22T16:45:01.782] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:45:01.784] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 5,
+  oid: null,
+  rows: [
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:45:07.978] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>11</id>
+</todo>
+[2024-12-22T16:45:07.981] [INFO] default - Deleting todo item with ID: 11
+[2024-12-22T16:45:08.033] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:45:08.034] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 4,
+  oid: null,
+  rows: [
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    },
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:45:08.036] [INFO] default - Todo with id 11 deleted successfully.
+[2024-12-22T16:45:08.422] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>12</id>
+</todo>
+[2024-12-22T16:45:08.423] [INFO] default - Deleting todo item with ID: 12
+[2024-12-22T16:45:08.473] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:45:08.474] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 3,
+  oid: null,
+  rows: [
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:45:08.475] [INFO] default - Todo with id 12 deleted successfully.
+[2024-12-22T16:45:30.479] [INFO] default - Received login request
+[2024-12-22T16:45:30.540] [WARN] default - Login failed: User dan not found
+[2024-12-22T16:48:47.959] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T16:48:47.964] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T16:48:49.076] [INFO] default - Received register request
+[2024-12-22T16:48:49.274] [INFO] default - User dan registered with hashed password.
+[2024-12-22T16:48:53.386] [INFO] default - Received login request
+[2024-12-22T16:48:53.484] [INFO] default - Login successful for user: dan
+[2024-12-22T16:48:53.505] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T16:48:53.508] [INFO] default - ⚡: XnOQ9RakGvDLatBuAAAB user just connected!
+[2024-12-22T16:48:53.513] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:48:53.515] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 3,
+  oid: null,
+  rows: [
+    {
+      id: 13,
+      text: 'jjjtjhfhgfdr',
+      timeStamp: '2024-12-22T13:53:16.907Z',
+      userId: 'dan'
+    },
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:50:42.753] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>13</id>
+</todo>
+[2024-12-22T16:50:42.755] [INFO] default - Deleting todo item with ID: 13
+[2024-12-22T16:50:42.812] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:50:42.814] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 2,
+  oid: null,
+  rows: [
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:50:42.815] [INFO] default - Todo with id 13 deleted successfully.
+[2024-12-22T16:50:44.549] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfasdfads</text>
+  <timestamp>2024-12-22T14:50:44.548Z</timestamp>
+</todo>
+[2024-12-22T16:50:44.550] [INFO] default - Adding todo item1234: {
+  text: 'asdfasdfads',
+  timeStamp: '2024-12-22T14:50:44.548Z',
+  userId: 'dan'
+}
+[2024-12-22T16:50:44.550] [INFO] default - values: [ 'asdfasdfads', '2024-12-22T14:50:44.548Z', 'dan' ]
+[2024-12-22T16:50:44.612] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 16,
+      text: 'asdfasdfads',
+      timeStamp: '2024-12-22T14:50:44.548Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:50:44.613] [INFO] default - newTodo(back from db):  {
+  id: 16,
+  text: 'asdfasdfads',
+  timeStamp: '2024-12-22T14:50:44.548Z',
+  userId: 'dan'
+}
+[2024-12-22T16:50:44.614] [INFO] default - Fetching all todos from the database
+[2024-12-22T16:50:44.615] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 3,
+  oid: null,
+  rows: [
+    {
+      id: 14,
+      text: 'jkl;jkl;jkl;jkl',
+      timeStamp: '2024-12-22T13:53:22.351Z',
+      userId: 'dan'
+    },
+    {
+      id: 15,
+      text: 'asdfasdfas',
+      timeStamp: '2024-12-22T13:54:13.784Z',
+      userId: 'dan'
+    },
+    {
+      id: 16,
+      text: 'asdfasdfads',
+      timeStamp: '2024-12-22T14:50:44.548Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T16:50:44.616] [INFO] default - allTodos(back from db):  [
+  {
+    id: 14,
+    text: 'jkl;jkl;jkl;jkl',
+    timeStamp: '2024-12-22T13:53:22.351Z',
+    userId: 'dan'
+  },
+  {
+    id: 15,
+    text: 'asdfasdfas',
+    timeStamp: '2024-12-22T13:54:13.784Z',
+    userId: 'dan'
+  },
+  {
+    id: 16,
+    text: 'asdfasdfads',
+    timeStamp: '2024-12-22T14:50:44.548Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T16:50:44.617] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>14</id>
+    <text>jkl;jkl;jkl;jkl</text>
+    <timeStamp>2024-12-22T13:53:22.351Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>15</id>
+    <text>asdfasdfas</text>
+    <timeStamp>2024-12-22T13:54:13.784Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>16</id>
+    <text>asdfasdfads</text>
+    <timeStamp>2024-12-22T14:50:44.548Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T17:01:13.152] [INFO] default - Received register request
+[2024-12-22T17:01:13.260] [ERROR] default - User: dan Already exists
+[2024-12-22T17:01:13.260] [WARN] default - Register failed
+[2024-12-22T17:03:43.896] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T17:03:43.902] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T17:03:43.954] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T17:03:43.957] [INFO] default - ⚡: u8zd0Dh8jcibyoxRAAAB user just connected!
+[2024-12-22T17:03:46.964] [INFO] default - Received register request
+[2024-12-22T17:03:47.094] [ERROR] default - User: dan Already exists
+[2024-12-22T17:04:18.290] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T17:04:18.294] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T17:04:19.466] [INFO] default - Received register request
+[2024-12-22T17:04:19.583] [WARN] default - User: dan Already exists

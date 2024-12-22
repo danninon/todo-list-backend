@@ -1,10 +1,6 @@
 import {TodoItem} from "../interfaces/TodoItem";
-import { v4 as uuidv4 } from "uuid";
 import logger from "../libs/logger";
 import pool from "../config/connection";
-
-let todoList:TodoItem[] = []; // A centralized in-memory storage for todos
-
 
 async function addTodo(todoItemWithoutID: Omit<TodoItem, "id">): Promise<TodoItem> {
     logger.info("Adding todo item1234:", todoItemWithoutID);
@@ -65,10 +61,8 @@ async function getAllTodos(): Promise<TodoItem[]> {
         SELECT id, text, time_stamp AS "timeStamp", user_id AS "userId"
         FROM todo_items
     `;
-
     const result = await pool.query(query);
     logger.info("result: ", result);
-    // Return all todo items as an array
     return result.rows;
 }
 

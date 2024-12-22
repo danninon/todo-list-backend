@@ -6,6 +6,7 @@ import { initSocketServer } from "./socket/socket";
 import { loginRoute } from "./controllers/login";
 import logger from "./libs/logger"; // Ensure logger is imported
 import config from "./config/default";
+import {registerRoute} from "./controllers/register";
 
 const app = express();
 const server = http.createServer(app);
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
+app.use("/auth", registerRoute);
 app.use("/auth", loginRoute);
 // app.use("/api", todoRoute);
 
