@@ -1,8 +1,8 @@
 import {Server as IOServer, Socket} from "socket.io";
 import { Builder, parseStringPromise } from "xml2js";
-import { addTodo, getAllTodos, deleteTodo } from "../data/todosDal"; // Import todo service functions
+import { addTodo, getAllTodos, deleteTodo } from "../db/todosPostgresDal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
-import {DataValidator} from "../data/validator";
+import {DataValidator} from "../db/validator";
 import  logger  from "../libs/logger";
 
 const userSocketConnections: { [key: string]: string } = {}; // Map socket.id to userId
@@ -27,7 +27,7 @@ export class SocketHandler {
             return;
         }
 
-        const allTodos = getAllTodos();
+        const allTodos = await getAllTodos();
         const xmlResponse = new Builder().buildObject({
             todos: {
                 todo: allTodos, // Ensure allTodos is properly structured
@@ -39,7 +39,7 @@ export class SocketHandler {
     async handleAddTodo(xmlPayload: string) {
         try {
             logger.info("Received XML payload for addTodo:", xmlPayload);
-            // console.log('socket.data.user',this.socket.data.user)
+            // console.log('socket.db.user',this.socket.db.user)
 
             const parsedPayload = await parseStringPromise(xmlPayload, { explicitArray: false });
             const todoPayload = parsedPayload.todo;
@@ -60,9 +60,10 @@ export class SocketHandler {
 
            this.dataValidator.validate(todoWithoutID);
 
-            const newTodo = addTodo(todoWithoutID);
-            const allTodos = getAllTodos();
-
+            const newTodo = await addTodo(todoWithoutID);
+            logger.log("newTodo(back from db): ", newTodo)
+            const allTodos = await getAllTodos();
+            logger.log("allTodos(back from db): ", allTodos);
             const xmlTodos = {
                 todos: {
                     todo: allTodos,
@@ -103,9 +104,9 @@ export class SocketHandler {
                 return;
             }
 
-            const success = deleteTodo(todoId);
+            const success = await deleteTodo(todoId);
             if (success) {
-                const allTodos = getAllTodos();
+                const allTodos = await getAllTodos();
                 const xmlResponse = new Builder().buildObject({
                     todos: {
                         todo: allTodos,

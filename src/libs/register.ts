@@ -1,5 +1,5 @@
 // move this to service
-import {RegisteredUser} from "../data/usersDal";
+import {RegisteredUser} from "../db/usersDal";
 import bcrypt from "bcrypt";
 
 const saltRounds = 10

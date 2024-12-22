@@ -614,3 +614,1766 @@
 [2024-12-22T14:31:26.889] [INFO] default - On io.use(socket,next)=>{....}
 [2024-12-22T14:31:26.892] [INFO] default - ⚡: WtQf76RS91cyqlYgAAAC user just connected!
 [2024-12-22T14:31:26.896] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:36:33.767] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:36:33.772] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:36:35.850] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:36:35.855] [INFO] default - ⚡: CBMR3rm_blKpU9aQAAAB user just connected!
+[2024-12-22T14:36:42.355] [INFO] default - Received login request
+[2024-12-22T14:36:42.406] [INFO] default - Login successful for user: dan
+[2024-12-22T14:36:42.430] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:36:42.432] [INFO] default - ⚡: QsRiynfyA0MiLBb9AAAE user just connected!
+[2024-12-22T14:36:42.436] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:40:45.837] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:40:45.839] [INFO] default - ⚡: Mqmpch3ivZEbDOUcAAAG user just connected!
+[2024-12-22T14:40:45.843] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:40:50.531] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:40:50.536] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:40:50.615] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:40:50.619] [INFO] default - ⚡: bAlXOFnOr55ihZL1AAAC user just connected!
+[2024-12-22T14:40:50.620] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:40:50.622] [INFO] default - ⚡: BxC3-iZuxVZcGovgAAAD user just connected!
+[2024-12-22T14:53:22.578] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:53:22.583] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:53:22.598] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:53:22.601] [INFO] default - ⚡: qWRFlv-9rJfhKWtlAAAB user just connected!
+[2024-12-22T14:53:49.369] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:53:49.373] [INFO] default - ⚡: pWMmlqWoMPfz-C-hAAAG user just connected!
+[2024-12-22T14:53:49.377] [INFO] default - Fetching all todos
+[2024-12-22T14:54:14.845] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:54:14.850] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:54:15.096] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:54:15.100] [INFO] default - ⚡: skTaipROPQnR-Q3_AAAB user just connected!
+[2024-12-22T14:54:15.105] [INFO] default - Fetching all todos
+[2024-12-22T14:55:40.180] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:55:40.186] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:55:44.352] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:55:44.356] [INFO] default - ⚡: LI0Ml5LPHQQF9yW4AAAB user just connected!
+[2024-12-22T14:55:44.406] [INFO] default - Fetching all todos
+[2024-12-22T14:58:08.564] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:58:08.569] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:58:09.810] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:58:09.813] [INFO] default - ⚡: 25h9kXSOx7imgerBAAAB user just connected!
+[2024-12-22T14:58:09.857] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:58:26.531] [INFO] default - Received login request
+[2024-12-22T14:58:26.582] [INFO] default - Login successful for user: dan
+[2024-12-22T14:58:26.599] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:58:26.600] [INFO] default - ⚡: S_AEgmEifyPiB40mAAAD user just connected!
+[2024-12-22T14:58:26.604] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:58:28.102] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>adfadf</text>
+  <timestamp>2024-12-22T12:58:28.101Z</timestamp>
+</todo>
+[2024-12-22T14:58:28.105] [INFO] default - Adding todo item with ID: {
+  text: 'adfadf',
+  timeStamp: '2024-12-22T12:58:28.101Z',
+  userId: 'dan'
+}
+[2024-12-22T14:58:28.105] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:58:28.106] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <text>adfadf</text>
+    <timeStamp>2024-12-22T12:58:28.101Z</timeStamp>
+    <userId>dan</userId>
+    <id>8e1156d1-0589-413c-b0a7-0d400aa56047</id>
+  </todo>
+</todos>
+[2024-12-22T14:58:29.924] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>rtgrtgrt</text>
+  <timestamp>2024-12-22T12:58:29.924Z</timestamp>
+</todo>
+[2024-12-22T14:58:29.925] [INFO] default - Adding todo item with ID: {
+  text: 'rtgrtgrt',
+  timeStamp: '2024-12-22T12:58:29.924Z',
+  userId: 'dan'
+}
+[2024-12-22T14:58:29.925] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:58:29.926] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <text>rtgrtgrt</text>
+    <timeStamp>2024-12-22T12:58:29.924Z</timeStamp>
+    <userId>dan</userId>
+    <id>ad262669-5f01-4c86-ac50-3721c62408cf</id>
+  </todo>
+  <todo>
+    <text>adfadf</text>
+    <timeStamp>2024-12-22T12:58:28.101Z</timeStamp>
+    <userId>dan</userId>
+    <id>8e1156d1-0589-413c-b0a7-0d400aa56047</id>
+  </todo>
+</todos>
+[2024-12-22T14:59:19.842] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:59:19.848] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:59:19.883] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:59:19.887] [INFO] default - ⚡: enWem-TLasSSkh8sAAAB user just connected!
+[2024-12-22T14:59:22.682] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:59:22.684] [INFO] default - ⚡: LoN6neqiDyEgmwsnAAAD user just connected!
+[2024-12-22T14:59:22.726] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:59:28.400] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>dsafsdf</text>
+  <timestamp>2024-12-22T12:59:28.399Z</timestamp>
+</todo>
+[2024-12-22T14:59:28.403] [INFO] default - Adding todo item: {
+  text: 'dsafsdf',
+  timeStamp: '2024-12-22T12:59:28.399Z',
+  userId: 'dan'
+}
+[2024-12-22T14:59:28.409] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:59:28.409] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:06:59.448] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:06:59.453] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:07:02.855] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:07:02.860] [INFO] default - ⚡: Yi7vsy4UQtfWHYVFAAAC user just connected!
+[2024-12-22T15:07:02.894] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:07:06.263] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:07:06.265] [INFO] default - ⚡: Jrj5mmL-5Z5qFbMmAAAF user just connected!
+[2024-12-22T15:07:06.269] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:07:11.025] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>jkhk</text>
+  <timestamp>2024-12-22T13:07:11.024Z</timestamp>
+</todo>
+[2024-12-22T15:07:11.028] [INFO] default - Adding todo item: { text: 'jkhk', timeStamp: '2024-12-22T13:07:11.024Z', userId: 'dan' }
+[2024-12-22T15:07:11.033] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:07:11.034] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:07:16.892] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:07:16.898] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:07:19.379] [INFO] default - Received login request
+[2024-12-22T15:07:19.431] [INFO] default - Login successful for user: dan
+[2024-12-22T15:07:19.449] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:07:19.452] [INFO] default - ⚡: jXN6732Bo8OEmvfOAAAB user just connected!
+[2024-12-22T15:07:19.457] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:07:21.089] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfa</text>
+  <timestamp>2024-12-22T13:07:21.088Z</timestamp>
+</todo>
+[2024-12-22T15:07:21.091] [INFO] default - Adding todo item: { text: 'asdfa', timeStamp: '2024-12-22T13:07:21.088Z', userId: 'dan' }
+[2024-12-22T15:07:21.097] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:07:21.097] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:09:37.647] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:09:37.651] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:09:41.745] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:09:41.749] [INFO] default - ⚡: BdWZUsWOj11HnKTmAAAB user just connected!
+[2024-12-22T15:09:43.606] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:09:43.607] [INFO] default - ⚡: cap5HBTmaHLyuRuRAAAE user just connected!
+[2024-12-22T15:09:43.611] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:09:45.654] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>adsfasdf</text>
+  <timestamp>2024-12-22T13:09:45.653Z</timestamp>
+</todo>
+[2024-12-22T15:09:45.657] [INFO] default - Adding todo item: {
+  text: 'adsfasdf',
+  timeStamp: '2024-12-22T13:09:45.653Z',
+  userId: 'dan'
+}
+[2024-12-22T15:09:45.662] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:09:45.663] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:16:00.480] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:16:00.485] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:16:04.616] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:16:04.620] [INFO] default - ⚡: cJ1EgWSzyMAqJwi1AAAC user just connected!
+[2024-12-22T15:16:04.625] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:16:06.800] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:16:06.802] [INFO] default - ⚡: gs9tgXPGZGGafBsfAAAF user just connected!
+[2024-12-22T15:16:06.806] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:16:11.311] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:16:11.313] [INFO] default - ⚡: 746I-E_QqxDoTu1NAAAH user just connected!
+[2024-12-22T15:16:11.352] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:16:31.401] [INFO] default - Received login request
+[2024-12-22T15:16:31.452] [INFO] default - Login successful for user: dan
+[2024-12-22T15:16:31.469] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:16:31.472] [INFO] default - ⚡: 5hECX023zwrzmdNvAAAJ user just connected!
+[2024-12-22T15:16:31.476] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:16:56.251] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfasd</text>
+  <timestamp>2024-12-22T13:16:56.250Z</timestamp>
+</todo>
+[2024-12-22T15:16:56.254] [INFO] default - Adding todo item: {
+  text: 'asdfasd',
+  timeStamp: '2024-12-22T13:16:56.250Z',
+  userId: 'dan'
+}
+[2024-12-22T15:16:56.259] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:16:56.260] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:17:02.464] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfff</text>
+  <timestamp>2024-12-22T13:17:02.464Z</timestamp>
+</todo>
+[2024-12-22T15:17:02.464] [INFO] default - Adding todo item: {
+  text: 'asdfff',
+  timeStamp: '2024-12-22T13:17:02.464Z',
+  userId: 'dan'
+}
+[2024-12-22T15:17:02.465] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:17:02.465] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:23:20.325] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:23:20.330] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:23:22.091] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:23:22.096] [INFO] default - ⚡: _hPUbFaenrJ8htMqAAAB user just connected!
+[2024-12-22T15:23:22.101] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:23:24.521] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>p[o[</text>
+  <timestamp>2024-12-22T13:23:24.519Z</timestamp>
+</todo>
+[2024-12-22T15:23:24.524] [INFO] default - Adding todo item: { text: 'p[o[', timeStamp: '2024-12-22T13:23:24.519Z', userId: 'dan' }
+[2024-12-22T15:23:24.529] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:23:24.530] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:24:25.228] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:24:25.233] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:24:25.345] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:24:25.349] [INFO] default - ⚡: SQPa0xRZSXFdqw08AAAC user just connected!
+[2024-12-22T15:24:25.353] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:24:28.416] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:24:28.418] [INFO] default - ⚡: dI5eYU7Labf5pb2UAAAF user just connected!
+[2024-12-22T15:24:28.424] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:24:36.723] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:24:36.726] [INFO] default - ⚡: SOeYgTRa0ul59gIIAAAI user just connected!
+[2024-12-22T15:24:36.730] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:24:38.671] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>jkl;</text>
+  <timestamp>2024-12-22T13:24:38.670Z</timestamp>
+</todo>
+[2024-12-22T15:24:38.674] [INFO] default - Adding todo item: { text: 'jkl;', timeStamp: '2024-12-22T13:24:38.670Z', userId: 'dan' }
+[2024-12-22T15:24:38.674] [INFO] default - Adding todo item2: [ 'jkl;', '2024-12-22T13:24:38.670Z', 'dan' ]
+[2024-12-22T15:24:38.680] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:24:38.680] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:25:13.007] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:25:13.012] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:25:19.111] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:19.116] [INFO] default - ⚡: VDBsNYqLkENPhymmAAAC user just connected!
+[2024-12-22T15:25:19.122] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:21.320] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:21.322] [INFO] default - ⚡: hHos7-iU7g4kD4p_AAAF user just connected!
+[2024-12-22T15:25:21.326] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:22.947] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:22.949] [INFO] default - ⚡: KUQzOVXAK3tFVC56AAAI user just connected!
+[2024-12-22T15:25:22.952] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:24.071] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:24.073] [INFO] default - ⚡: NOSzci7K45ZsN5t2AAAL user just connected!
+[2024-12-22T15:25:24.079] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:24.594] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:24.596] [INFO] default - ⚡: x7R2DsDT-rIWcpZOAAAO user just connected!
+[2024-12-22T15:25:24.599] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:24.896] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:24.898] [INFO] default - ⚡: qjVQ_O50oYYKHYmzAAAR user just connected!
+[2024-12-22T15:25:24.901] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.082] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.083] [INFO] default - ⚡: cyJ503o-UURHqVASAAAU user just connected!
+[2024-12-22T15:25:25.087] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.249] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.251] [INFO] default - ⚡: fLbJ16VB1FbWmqwqAAAX user just connected!
+[2024-12-22T15:25:25.254] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.421] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.423] [INFO] default - ⚡: 5zn-VcP0NOTJkVBsAAAa user just connected!
+[2024-12-22T15:25:25.428] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.600] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.602] [INFO] default - ⚡: HDUdX9Q5LIHDEI2fAAAd user just connected!
+[2024-12-22T15:25:25.605] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.792] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.793] [INFO] default - ⚡: P0yApgezzgFo90OjAAAg user just connected!
+[2024-12-22T15:25:25.796] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:25.951] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:25.952] [INFO] default - ⚡: 9l2D39v_RAMPg8cqAAAj user just connected!
+[2024-12-22T15:25:25.955] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:29.712] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:25:29.714] [INFO] default - ⚡: RH9E28pyKvxdqX2RAAAl user just connected!
+[2024-12-22T15:25:29.765] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:31.591] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>hgjghj</text>
+  <timestamp>2024-12-22T13:25:31.590Z</timestamp>
+</todo>
+[2024-12-22T15:25:31.594] [INFO] default - Adding todo item: {
+  text: 'hgjghj',
+  timeStamp: '2024-12-22T13:25:31.590Z',
+  userId: 'dan'
+}
+[2024-12-22T15:25:31.594] [INFO] default - values: [ 'hgjghj', '2024-12-22T13:25:31.590Z', 'dan' ]
+[2024-12-22T15:25:31.599] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:25:31.600] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:25:31.668] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:27:06.349] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:27:06.355] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:27:06.392] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:27:06.396] [INFO] default - ⚡: EyeJO0ELeLe6wtyMAAAB user just connected!
+[2024-12-22T15:27:08.358] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:27:08.361] [INFO] default - ⚡: vtPO4fD--vaKA9FRAAAE user just connected!
+[2024-12-22T15:27:08.365] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:27:10.031] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>rtyjtryj</text>
+  <timestamp>2024-12-22T13:27:10.029Z</timestamp>
+</todo>
+[2024-12-22T15:27:10.034] [INFO] default - Adding todo item: {
+  text: 'rtyjtryj',
+  timeStamp: '2024-12-22T13:27:10.029Z',
+  userId: 'dan'
+}
+[2024-12-22T15:27:10.034] [INFO] default - values: [ 'rtyjtryj', '2024-12-22T13:27:10.029Z', 'dan' ]
+[2024-12-22T15:27:10.040] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:27:10.040] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:27:10.103] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 4,
+      text: 'rtyjtryj',
+      timeStamp: '2024-12-22T13:27:10.029Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:29:02.599] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:29:02.605] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:29:06.218] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:29:06.222] [INFO] default - ⚡: WcYHlh8zBfWCVhEIAAAB user just connected!
+[2024-12-22T15:29:06.721] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>sdfgsdfg</text>
+  <timestamp>2024-12-22T13:29:06.721Z</timestamp>
+</todo>
+[2024-12-22T15:29:06.724] [INFO] default - Adding todo item1234: {
+  text: 'sdfgsdfg',
+  timeStamp: '2024-12-22T13:29:06.721Z',
+  userId: 'dan'
+}
+[2024-12-22T15:29:06.724] [INFO] default - values: [ 'sdfgsdfg', '2024-12-22T13:29:06.721Z', 'dan' ]
+[2024-12-22T15:29:06.730] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:29:06.733] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:29:06.801] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 5,
+      text: 'sdfgsdfg',
+      timeStamp: '2024-12-22T13:29:06.721Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:30:35.094] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:30:35.100] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:30:35.162] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:30:35.166] [INFO] default - ⚡: Sl65f_3LC4-qEbeiAAAB user just connected!
+[2024-12-22T15:30:37.099] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:30:37.101] [INFO] default - ⚡: mhoRCXOhqCQLIZkgAAAE user just connected!
+[2024-12-22T15:30:37.106] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:30:38.987] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>fgsdfgsdfg</text>
+  <timestamp>2024-12-22T13:30:38.986Z</timestamp>
+</todo>
+[2024-12-22T15:30:38.990] [INFO] default - Adding todo item1234: {
+  text: 'fgsdfgsdfg',
+  timeStamp: '2024-12-22T13:30:38.986Z',
+  userId: 'dan'
+}
+[2024-12-22T15:30:38.991] [INFO] default - values: [ 'fgsdfgsdfg', '2024-12-22T13:30:38.986Z', 'dan' ]
+[2024-12-22T15:30:38.996] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:30:38.997] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:30:39.059] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 6,
+      text: 'fgsdfgsdfg',
+      timeStamp: '2024-12-22T13:30:38.986Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:31:03.563] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:31:03.568] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:31:03.783] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:31:03.787] [INFO] default - ⚡: 1v3_YqzMW6Iie492AAAD user just connected!
+[2024-12-22T15:31:03.792] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:31:05.226] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdfasdf</text>
+  <timestamp>2024-12-22T13:31:05.224Z</timestamp>
+</todo>
+[2024-12-22T15:31:05.229] [INFO] default - Adding todo item1234: {
+  text: 'asdfasdf',
+  timeStamp: '2024-12-22T13:31:05.224Z',
+  userId: 'dan'
+}
+[2024-12-22T15:31:05.229] [INFO] default - values: [ 'asdfasdf', '2024-12-22T13:31:05.224Z', 'dan' ]
+[2024-12-22T15:31:05.235] [INFO] default - newTodo(back from db):  Promise { <pending> }
+[2024-12-22T15:31:05.235] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:31:05.236] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:31:05.299] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:31:19.709] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>uryury</text>
+  <timestamp>2024-12-22T13:31:19.708Z</timestamp>
+</todo>
+[2024-12-22T15:31:19.710] [INFO] default - Adding todo item1234: {
+  text: 'uryury',
+  timeStamp: '2024-12-22T13:31:19.708Z',
+  userId: 'dan'
+}
+[2024-12-22T15:31:19.710] [INFO] default - values: [ 'uryury', '2024-12-22T13:31:19.708Z', 'dan' ]
+[2024-12-22T15:31:19.710] [INFO] default - newTodo(back from db):  Promise { <pending> }
+[2024-12-22T15:31:19.711] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:31:19.711] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:31:19.767] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:32:09.597] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:32:09.602] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:32:09.689] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:32:09.693] [INFO] default - ⚡: WUcIL9vEVV6aXHqFAAAB user just connected!
+[2024-12-22T15:32:10.700] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:32:10.702] [INFO] default - ⚡: 6vu5SVgqYMi1GhGEAAAE user just connected!
+[2024-12-22T15:32:10.708] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:32:12.328] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>dfasdfasd</text>
+  <timestamp>2024-12-22T13:32:12.326Z</timestamp>
+</todo>
+[2024-12-22T15:32:12.330] [INFO] default - Adding todo item1234: {
+  text: 'dfasdfasd',
+  timeStamp: '2024-12-22T13:32:12.326Z',
+  userId: 'dan'
+}
+[2024-12-22T15:32:12.331] [INFO] default - values: [ 'dfasdfasd', '2024-12-22T13:32:12.326Z', 'dan' ]
+[2024-12-22T15:32:12.396] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:32:12.397] [INFO] default - newTodo(back from db):  {
+  id: 9,
+  text: 'dfasdfasd',
+  timeStamp: '2024-12-22T13:32:12.326Z',
+  userId: 'dan'
+}
+[2024-12-22T15:32:12.397] [INFO] default - In 'getAllTodos'
+[2024-12-22T15:32:12.397] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos/>
+[2024-12-22T15:35:12.515] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:35:12.521] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:35:26.578] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:26.582] [INFO] default - ⚡: 2jCDz3TVGj9T5RzDAAAC user just connected!
+[2024-12-22T15:35:26.588] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:27.956] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:27.958] [INFO] default - ⚡: LmibsxfZ8Zc57vOuAAAF user just connected!
+[2024-12-22T15:35:27.962] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:28.469] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:28.471] [INFO] default - ⚡: 29o7pval4-Id0H27AAAI user just connected!
+[2024-12-22T15:35:28.474] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:28.983] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:28.986] [INFO] default - ⚡: ftdFSAEiPX_xOBYvAAAL user just connected!
+[2024-12-22T15:35:28.991] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:29.759] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:29.761] [INFO] default - ⚡: 9ojjJKEtNRjklzWoAAAO user just connected!
+[2024-12-22T15:35:29.765] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:33.980] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:33.982] [INFO] default - ⚡: wUTGPaPmzCLjlxySAAAQ user just connected!
+[2024-12-22T15:35:33.987] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:35:56.059] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:35:56.064] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:35:57.558] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:35:57.564] [INFO] default - ⚡: jGpBQPaccc81yr2YAAAC user just connected!
+[2024-12-22T15:35:57.604] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:36:35.350] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:36:35.356] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:36:37.961] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:36:37.965] [INFO] default - ⚡: b9ZP9wxfB-K7TOldAAAB user just connected!
+[2024-12-22T15:36:39.407] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdf</text>
+  <timestamp>2024-12-22T13:36:39.405Z</timestamp>
+</todo>
+[2024-12-22T15:36:39.410] [INFO] default - Adding todo item1234: { text: 'asdf', timeStamp: '2024-12-22T13:36:39.405Z', userId: 'dan' }
+[2024-12-22T15:36:39.410] [INFO] default - values: [ 'asdf', '2024-12-22T13:36:39.405Z', 'dan' ]
+[2024-12-22T15:36:39.478] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:36:39.479] [INFO] default - newTodo(back from db):  {
+  id: 10,
+  text: 'asdf',
+  timeStamp: '2024-12-22T13:36:39.405Z',
+  userId: 'dan'
+}
+[2024-12-22T15:36:39.479] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:36:39.481] [INFO] default - allTodos(back from db):  [
+  {
+    id: 1,
+    text: 'p[o[',
+    timeStamp: '2024-12-22T13:23:24.519Z',
+    userId: 'dan'
+  },
+  {
+    id: 2,
+    text: 'jkl;',
+    timeStamp: '2024-12-22T13:24:38.670Z',
+    userId: 'dan'
+  },
+  {
+    id: 3,
+    text: 'hgjghj',
+    timeStamp: '2024-12-22T13:25:31.590Z',
+    userId: 'dan'
+  },
+  {
+    id: 4,
+    text: 'rtyjtryj',
+    timeStamp: '2024-12-22T13:27:10.029Z',
+    userId: 'dan'
+  },
+  {
+    id: 5,
+    text: 'sdfgsdfg',
+    timeStamp: '2024-12-22T13:29:06.721Z',
+    userId: 'dan'
+  },
+  {
+    id: 6,
+    text: 'fgsdfgsdfg',
+    timeStamp: '2024-12-22T13:30:38.986Z',
+    userId: 'dan'
+  },
+  {
+    id: 7,
+    text: 'asdfasdf',
+    timeStamp: '2024-12-22T13:31:05.224Z',
+    userId: 'dan'
+  },
+  {
+    id: 8,
+    text: 'uryury',
+    timeStamp: '2024-12-22T13:31:19.708Z',
+    userId: 'dan'
+  },
+  {
+    id: 9,
+    text: 'dfasdfasd',
+    timeStamp: '2024-12-22T13:32:12.326Z',
+    userId: 'dan'
+  },
+  {
+    id: 10,
+    text: 'asdf',
+    timeStamp: '2024-12-22T13:36:39.405Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:36:39.486] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>1</id>
+    <text>p[o[</text>
+    <timeStamp>2024-12-22T13:23:24.519Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>2</id>
+    <text>jkl;</text>
+    <timeStamp>2024-12-22T13:24:38.670Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>3</id>
+    <text>hgjghj</text>
+    <timeStamp>2024-12-22T13:25:31.590Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>4</id>
+    <text>rtyjtryj</text>
+    <timeStamp>2024-12-22T13:27:10.029Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>5</id>
+    <text>sdfgsdfg</text>
+    <timeStamp>2024-12-22T13:29:06.721Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>6</id>
+    <text>fgsdfgsdfg</text>
+    <timeStamp>2024-12-22T13:30:38.986Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>7</id>
+    <text>asdfasdf</text>
+    <timeStamp>2024-12-22T13:31:05.224Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>8</id>
+    <text>uryury</text>
+    <timeStamp>2024-12-22T13:31:19.708Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>9</id>
+    <text>dfasdfasd</text>
+    <timeStamp>2024-12-22T13:32:12.326Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>10</id>
+    <text>asdf</text>
+    <timeStamp>2024-12-22T13:36:39.405Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T15:48:22.678] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:48:22.683] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:48:22.866] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:22.870] [INFO] default - ⚡: tLByFz-26lu3U5DmAAAB user just connected!
+[2024-12-22T15:48:31.882] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:31.884] [INFO] default - ⚡: g-UEuLw5tQLJmHWkAAAE user just connected!
+[2024-12-22T15:48:31.888] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:33.415] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:33.417] [INFO] default - ⚡: K9dmcEgnNIK0K5CjAAAH user just connected!
+[2024-12-22T15:48:33.421] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:33.836] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:33.838] [INFO] default - ⚡: P26FCGyBEttaZSmBAAAK user just connected!
+[2024-12-22T15:48:33.841] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:34.144] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:34.147] [INFO] default - ⚡: BjXwAq-mrlskuVT6AAAN user just connected!
+[2024-12-22T15:48:34.152] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:34.401] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:34.403] [INFO] default - ⚡: p2LTdvzBIelIcoSrAAAQ user just connected!
+[2024-12-22T15:48:34.406] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:34.646] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:34.648] [INFO] default - ⚡: dpdp0BAOufJo44cBAAAT user just connected!
+[2024-12-22T15:48:34.653] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:34.874] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:34.876] [INFO] default - ⚡: u1gCXmWMRXaDcUlZAAAW user just connected!
+[2024-12-22T15:48:34.881] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:35.657] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:35.659] [INFO] default - ⚡: F8ueHRtZH-1TxMiUAAAZ user just connected!
+[2024-12-22T15:48:35.663] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:37.838] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:37.839] [INFO] default - ⚡: EinUEYa0LgDxOL7_AAAb user just connected!
+[2024-12-22T15:48:37.873] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:48:56.442] [INFO] default - Received login request
+[2024-12-22T15:48:56.493] [INFO] default - Login successful for user: dan
+[2024-12-22T15:48:56.508] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:48:56.510] [INFO] default - ⚡: MZAUfNm4XGw95NMdAAAd user just connected!
+[2024-12-22T15:48:56.513] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:03.068] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:49:03.073] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:49:03.828] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:49:03.832] [INFO] default - ⚡: Gdkipp35yV4aIpaJAAAC user just connected!
+[2024-12-22T15:49:03.836] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:06.391] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>fghf</text>
+  <timestamp>2024-12-22T13:49:06.389Z</timestamp>
+</todo>
+[2024-12-22T15:49:06.394] [INFO] default - Adding todo item1234: { text: 'fghf', timeStamp: '2024-12-22T13:49:06.389Z', userId: 'dan' }
+[2024-12-22T15:49:06.394] [INFO] default - values: [ 'fghf', '2024-12-22T13:49:06.389Z', 'dan' ]
+[2024-12-22T15:49:06.446] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:49:06.447] [INFO] default - newTodo(back from db):  {
+  id: 11,
+  text: 'fghf',
+  timeStamp: '2024-12-22T13:49:06.389Z',
+  userId: 'dan'
+}
+[2024-12-22T15:49:06.448] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:06.449] [INFO] default - allTodos(back from db):  [
+  {
+    id: 1,
+    text: 'p[o[',
+    timeStamp: '2024-12-22T13:23:24.519Z',
+    userId: 'dan'
+  },
+  {
+    id: 2,
+    text: 'jkl;',
+    timeStamp: '2024-12-22T13:24:38.670Z',
+    userId: 'dan'
+  },
+  {
+    id: 3,
+    text: 'hgjghj',
+    timeStamp: '2024-12-22T13:25:31.590Z',
+    userId: 'dan'
+  },
+  {
+    id: 4,
+    text: 'rtyjtryj',
+    timeStamp: '2024-12-22T13:27:10.029Z',
+    userId: 'dan'
+  },
+  {
+    id: 5,
+    text: 'sdfgsdfg',
+    timeStamp: '2024-12-22T13:29:06.721Z',
+    userId: 'dan'
+  },
+  {
+    id: 6,
+    text: 'fgsdfgsdfg',
+    timeStamp: '2024-12-22T13:30:38.986Z',
+    userId: 'dan'
+  },
+  {
+    id: 7,
+    text: 'asdfasdf',
+    timeStamp: '2024-12-22T13:31:05.224Z',
+    userId: 'dan'
+  },
+  {
+    id: 8,
+    text: 'uryury',
+    timeStamp: '2024-12-22T13:31:19.708Z',
+    userId: 'dan'
+  },
+  {
+    id: 9,
+    text: 'dfasdfasd',
+    timeStamp: '2024-12-22T13:32:12.326Z',
+    userId: 'dan'
+  },
+  {
+    id: 10,
+    text: 'asdf',
+    timeStamp: '2024-12-22T13:36:39.405Z',
+    userId: 'dan'
+  },
+  {
+    id: 11,
+    text: 'fghf',
+    timeStamp: '2024-12-22T13:49:06.389Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:49:06.451] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>1</id>
+    <text>p[o[</text>
+    <timeStamp>2024-12-22T13:23:24.519Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>2</id>
+    <text>jkl;</text>
+    <timeStamp>2024-12-22T13:24:38.670Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>3</id>
+    <text>hgjghj</text>
+    <timeStamp>2024-12-22T13:25:31.590Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>4</id>
+    <text>rtyjtryj</text>
+    <timeStamp>2024-12-22T13:27:10.029Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>5</id>
+    <text>sdfgsdfg</text>
+    <timeStamp>2024-12-22T13:29:06.721Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>6</id>
+    <text>fgsdfgsdfg</text>
+    <timeStamp>2024-12-22T13:30:38.986Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>7</id>
+    <text>asdfasdf</text>
+    <timeStamp>2024-12-22T13:31:05.224Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>8</id>
+    <text>uryury</text>
+    <timeStamp>2024-12-22T13:31:19.708Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>9</id>
+    <text>dfasdfasd</text>
+    <timeStamp>2024-12-22T13:32:12.326Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>10</id>
+    <text>asdf</text>
+    <timeStamp>2024-12-22T13:36:39.405Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>11</id>
+    <text>fghf</text>
+    <timeStamp>2024-12-22T13:49:06.389Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T15:49:08.605] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>6</id>
+</todo>
+[2024-12-22T15:49:08.605] [INFO] default - Deleting todo item with ID: 6
+[2024-12-22T15:49:08.658] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:08.658] [INFO] default - Todo with id 6 deleted successfully.
+[2024-12-22T15:49:11.209] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>4</id>
+</todo>
+[2024-12-22T15:49:11.210] [INFO] default - Deleting todo item with ID: 4
+[2024-12-22T15:49:11.256] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:11.256] [INFO] default - Todo with id 4 deleted successfully.
+[2024-12-22T15:49:22.265] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>4</id>
+</todo>
+[2024-12-22T15:49:22.265] [INFO] default - Deleting todo item with ID: 4
+[2024-12-22T15:49:22.325] [WARN] default - Todo not found or deletion failed
+[2024-12-22T15:49:27.414] [INFO] default - Received XML payload for deleteTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <id>5</id>
+</todo>
+[2024-12-22T15:49:27.415] [INFO] default - Deleting todo item with ID: 5
+[2024-12-22T15:49:27.465] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:27.465] [INFO] default - Todo with id 5 deleted successfully.
+[2024-12-22T15:49:36.350] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>dan</text>
+  <timestamp>2024-12-22T13:49:36.350Z</timestamp>
+</todo>
+[2024-12-22T15:49:36.351] [INFO] default - Adding todo item1234: { text: 'dan', timeStamp: '2024-12-22T13:49:36.350Z', userId: 'dan' }
+[2024-12-22T15:49:36.351] [INFO] default - values: [ 'dan', '2024-12-22T13:49:36.350Z', 'dan' ]
+[2024-12-22T15:49:36.396] [INFO] default - result: Result {
+  command: 'INSERT',
+  rowCount: 1,
+  oid: 0,
+  rows: [
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}
+[2024-12-22T15:49:36.397] [INFO] default - newTodo(back from db):  {
+  id: 12,
+  text: 'dan',
+  timeStamp: '2024-12-22T13:49:36.350Z',
+  userId: 'dan'
+}
+[2024-12-22T15:49:36.398] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:49:36.399] [INFO] default - allTodos(back from db):  [
+  {
+    id: 1,
+    text: 'p[o[',
+    timeStamp: '2024-12-22T13:23:24.519Z',
+    userId: 'dan'
+  },
+  {
+    id: 2,
+    text: 'jkl;',
+    timeStamp: '2024-12-22T13:24:38.670Z',
+    userId: 'dan'
+  },
+  {
+    id: 3,
+    text: 'hgjghj',
+    timeStamp: '2024-12-22T13:25:31.590Z',
+    userId: 'dan'
+  },
+  {
+    id: 7,
+    text: 'asdfasdf',
+    timeStamp: '2024-12-22T13:31:05.224Z',
+    userId: 'dan'
+  },
+  {
+    id: 8,
+    text: 'uryury',
+    timeStamp: '2024-12-22T13:31:19.708Z',
+    userId: 'dan'
+  },
+  {
+    id: 9,
+    text: 'dfasdfasd',
+    timeStamp: '2024-12-22T13:32:12.326Z',
+    userId: 'dan'
+  },
+  {
+    id: 10,
+    text: 'asdf',
+    timeStamp: '2024-12-22T13:36:39.405Z',
+    userId: 'dan'
+  },
+  {
+    id: 11,
+    text: 'fghf',
+    timeStamp: '2024-12-22T13:49:06.389Z',
+    userId: 'dan'
+  },
+  {
+    id: 12,
+    text: 'dan',
+    timeStamp: '2024-12-22T13:49:36.350Z',
+    userId: 'dan'
+  }
+]
+[2024-12-22T15:49:36.400] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <id>1</id>
+    <text>p[o[</text>
+    <timeStamp>2024-12-22T13:23:24.519Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>2</id>
+    <text>jkl;</text>
+    <timeStamp>2024-12-22T13:24:38.670Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>3</id>
+    <text>hgjghj</text>
+    <timeStamp>2024-12-22T13:25:31.590Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>7</id>
+    <text>asdfasdf</text>
+    <timeStamp>2024-12-22T13:31:05.224Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>8</id>
+    <text>uryury</text>
+    <timeStamp>2024-12-22T13:31:19.708Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>9</id>
+    <text>dfasdfasd</text>
+    <timeStamp>2024-12-22T13:32:12.326Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>10</id>
+    <text>asdf</text>
+    <timeStamp>2024-12-22T13:36:39.405Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>11</id>
+    <text>fghf</text>
+    <timeStamp>2024-12-22T13:49:06.389Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+  <todo>
+    <id>12</id>
+    <text>dan</text>
+    <timeStamp>2024-12-22T13:49:36.350Z</timeStamp>
+    <userId>dan</userId>
+  </todo>
+</todos>
+[2024-12-22T15:49:38.437] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:49:38.439] [INFO] default - ⚡: nfHIy2v23b0UcdFtAAAF user just connected!
+[2024-12-22T15:49:38.442] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:50:46.536] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:50:46.541] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:50:47.574] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:50:47.579] [INFO] default - ⚡: i0mxFzhuB2y6jeJfAAAC user just connected!
+[2024-12-22T15:50:47.584] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:51:50.850] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T15:51:50.855] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T15:51:51.642] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T15:51:51.646] [INFO] default - ⚡: kJSHJo0aR2AZJ5yaAAAC user just connected!
+[2024-12-22T15:51:51.650] [INFO] default - Fetching all todos from the database
+[2024-12-22T15:51:51.677] [INFO] default - result:  Result {
+  command: 'SELECT',
+  rowCount: 9,
+  oid: null,
+  rows: [
+    {
+      id: 1,
+      text: 'p[o[',
+      timeStamp: '2024-12-22T13:23:24.519Z',
+      userId: 'dan'
+    },
+    {
+      id: 2,
+      text: 'jkl;',
+      timeStamp: '2024-12-22T13:24:38.670Z',
+      userId: 'dan'
+    },
+    {
+      id: 3,
+      text: 'hgjghj',
+      timeStamp: '2024-12-22T13:25:31.590Z',
+      userId: 'dan'
+    },
+    {
+      id: 7,
+      text: 'asdfasdf',
+      timeStamp: '2024-12-22T13:31:05.224Z',
+      userId: 'dan'
+    },
+    {
+      id: 8,
+      text: 'uryury',
+      timeStamp: '2024-12-22T13:31:19.708Z',
+      userId: 'dan'
+    },
+    {
+      id: 9,
+      text: 'dfasdfasd',
+      timeStamp: '2024-12-22T13:32:12.326Z',
+      userId: 'dan'
+    },
+    {
+      id: 10,
+      text: 'asdf',
+      timeStamp: '2024-12-22T13:36:39.405Z',
+      userId: 'dan'
+    },
+    {
+      id: 11,
+      text: 'fghf',
+      timeStamp: '2024-12-22T13:49:06.389Z',
+      userId: 'dan'
+    },
+    {
+      id: 12,
+      text: 'dan',
+      timeStamp: '2024-12-22T13:49:36.350Z',
+      userId: 'dan'
+    }
+  ],
+  fields: [
+    Field {
+      name: 'id',
+      tableID: 16423,
+      columnID: 1,
+      dataTypeID: 23,
+      dataTypeSize: 4,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'text',
+      tableID: 16423,
+      columnID: 2,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'timeStamp',
+      tableID: 16423,
+      columnID: 3,
+      dataTypeID: 25,
+      dataTypeSize: -1,
+      dataTypeModifier: -1,
+      format: 'text'
+    },
+    Field {
+      name: 'userId',
+      tableID: 16423,
+      columnID: 4,
+      dataTypeID: 1043,
+      dataTypeSize: -1,
+      dataTypeModifier: 259,
+      format: 'text'
+    }
+  ],
+  _parsers: [
+    [Function: parseInteger],
+    [Function: noParse],
+    [Function: noParse],
+    [Function: noParse]
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [Function: getTypeParser],
+      setTypeParser: [Function: setTypeParser],
+      arrayParser: [Object],
+      builtins: [Object]
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: null,
+  rowAsArray: false,
+  _prebuiltEmptyResultObject: { id: null, text: null, timeStamp: null, userId: null }
+}

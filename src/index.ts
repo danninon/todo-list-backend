@@ -23,8 +23,9 @@ app.use("/auth", loginRoute);
 const frontendPath = path.join(__dirname, "../../client/dist"); // Adjust path as needed
 app.use(express.static(frontendPath));
 logger.info("Serving frontend from:", frontendPath);
-// Fallback for React Router
+
 app.get("*", (req, res) => {
+    // logger.info("Serving react files...");
     res.sendFile(path.resolve(frontendPath, "index.html"));
 });
 

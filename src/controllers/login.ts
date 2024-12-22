@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
 import config from "../config/default";
 
-import {RegisteredUser} from "../data/usersDal";
+import {RegisteredUser} from "../db/usersDal";
 
 const router = express.Router();
 
