@@ -24,6 +24,7 @@ export const initSocketServer = (server: Server): void => {
         }
 
         try {
+            console.log(token);
             const decoded = jwt.verify(token, config.jwtSecret);
             console.log("decoded ", decoded);
             socket.data.user = decoded; // Attach decoded user info to the socket

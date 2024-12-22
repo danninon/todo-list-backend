@@ -1,6 +1,6 @@
 import {Server as IOServer, Socket} from "socket.io";
 import { Builder, parseStringPromise } from "xml2js";
-import { addTodo, getAllTodos, deleteTodo } from "../data/dal"; // Import todo service functions
+import { addTodo, getAllTodos, deleteTodo } from "../data/todosDal"; // Import todo service functions
 import { userConnectionTokens } from "../services/auth";
 import {DataValidator} from "../data/validator";
 import  logger  from "../libs/logger";

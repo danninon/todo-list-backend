@@ -475,3 +475,107 @@
 [2024-12-22T10:31:47.336] [INFO] default - On io.use(socket,next)=>{....}
 [2024-12-22T10:31:47.337] [INFO] default - ⚡: yEMAy_vLjYG1ieLJAAAK user just connected!
 [2024-12-22T10:31:47.342] [INFO] default - In 'getAllTodos'
+[2024-12-22T10:58:35.495] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T10:58:44.067] [INFO] default - Received login request
+[2024-12-22T10:58:44.070] [INFO] default - Login successful for user: dan
+[2024-12-22T10:58:44.093] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T10:58:44.096] [INFO] default - ⚡: qRannjCV4Uixofh1AAAC user just connected!
+[2024-12-22T10:58:44.099] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:01.587] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:00:01.718] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:00:01.722] [INFO] default - ⚡: lAmuC95I5qLkqkcqAAAE user just connected!
+[2024-12-22T11:00:01.726] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:03.825] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:00:03.827] [INFO] default - ⚡: crCZa6_gOY9MVlimAAAH user just connected!
+[2024-12-22T11:00:03.830] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:18.449] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:00:18.450] [INFO] default - ⚡: GtfgXiZ6rvkTSqf7AAAK user just connected!
+[2024-12-22T11:00:18.454] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:31.699] [INFO] default - Received login request
+[2024-12-22T11:00:31.700] [INFO] default - Login successful for user: dan
+[2024-12-22T11:00:31.722] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:00:31.723] [INFO] default - ⚡: e9l1FaotDmOB__VNAAAN user just connected!
+[2024-12-22T11:00:31.727] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:34.218] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>adfsdf</text>
+  <timestamp>2024-12-22T09:00:34.216Z</timestamp>
+</todo>
+[2024-12-22T11:00:34.221] [INFO] default - Adding todo item with ID: {
+  text: 'adfsdf',
+  timeStamp: '2024-12-22T09:00:34.216Z',
+  userId: 'dan'
+}
+[2024-12-22T11:00:34.222] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:00:34.223] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <text>adfsdf</text>
+    <timeStamp>2024-12-22T09:00:34.216Z</timeStamp>
+    <userId>dan</userId>
+    <id>06557434-ac82-444d-aaee-e4d9ab5f832e</id>
+  </todo>
+</todos>
+[2024-12-22T11:07:19.238] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:07:19.239] [INFO] default - ⚡: 0DAFp84XT1zdt_gCAAAP user just connected!
+[2024-12-22T11:07:19.243] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:07:26.105] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:07:26.107] [INFO] default - ⚡: jq39KYNGW0FYCV38AAAU user just connected!
+[2024-12-22T11:07:26.112] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:07:39.180] [INFO] default - Received login request
+[2024-12-22T11:07:39.181] [INFO] default - Login successful for user: dan
+[2024-12-22T11:07:39.201] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:07:39.202] [INFO] default - ⚡: LOzEVFZfF_vxWELnAAAX user just connected!
+[2024-12-22T11:07:39.205] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:10:11.242] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:10:11.270] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:10:11.274] [INFO] default - ⚡: HEWmKCwRpA-oYnGQAAAB user just connected!
+[2024-12-22T11:10:14.188] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:10:14.190] [INFO] default - ⚡: SlR8GA-JXyETMH70AAAG user just connected!
+[2024-12-22T11:10:14.197] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:10:20.883] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:10:23.170] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:10:23.174] [INFO] default - ⚡: LbhWQv8TyVP_48pLAAAB user just connected!
+[2024-12-22T11:10:23.179] [INFO] default - Received XML payload for addTodo: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todo>
+  <text>asdg</text>
+  <timestamp>2024-12-22T09:10:22.677Z</timestamp>
+</todo>
+[2024-12-22T11:10:23.182] [INFO] default - Adding todo item with ID: { text: 'asdg', timeStamp: '2024-12-22T09:10:22.677Z', userId: 'dan' }
+[2024-12-22T11:10:23.183] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:10:23.188] [INFO] default - New xmlResponse: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<todos>
+  <todo>
+    <text>asdg</text>
+    <timeStamp>2024-12-22T09:10:22.677Z</timeStamp>
+    <userId>dan</userId>
+    <id>dd642875-9d70-4652-9d95-4ddaabdad6d8</id>
+  </todo>
+</todos>
+[2024-12-22T11:10:28.827] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:10:30.732] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:10:30.737] [INFO] default - ⚡: LOAyt_G6EZhb9psKAAAE user just connected!
+[2024-12-22T11:10:30.744] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:34:36.680] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:34:55.582] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:35:45.624] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:36:56.366] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:37:08.591] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:37:08.594] [INFO] default - ⚡: 2iyZuPuviVqnE9HeAAAC user just connected!
+[2024-12-22T11:37:08.599] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:37:12.285] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:37:12.287] [INFO] default - ⚡: 2qpUOb6KKVDvJuaeAAAF user just connected!
+[2024-12-22T11:37:12.292] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:37:24.866] [INFO] default - Received login request
+[2024-12-22T11:37:24.917] [INFO] default - Login successful for user: dan
+[2024-12-22T11:37:24.939] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:37:24.940] [INFO] default - ⚡: HfeFJUAYHwkO43krAAAI user just connected!
+[2024-12-22T11:37:24.944] [INFO] default - In 'getAllTodos'
+[2024-12-22T11:38:41.163] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T11:38:41.362] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:38:41.366] [INFO] default - ⚡: 8m6_2IBZsyii7jgJAAAB user just connected!
+[2024-12-22T11:38:46.969] [INFO] default - Received login request
+[2024-12-22T11:38:47.020] [INFO] default - Login successful for user: dan
+[2024-12-22T11:38:47.043] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T11:38:47.044] [INFO] default - ⚡: xexax5O1pZ9y5CwKAAAE user just connected!
+[2024-12-22T11:38:47.048] [INFO] default - In 'getAllTodos'

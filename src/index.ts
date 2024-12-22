@@ -6,7 +6,7 @@ import { loginRoute } from "./controllers/login";
 // import { todoRoute } from "./controllers/todo";
 import  logger  from "./libs/logger"; // Ensure logger is imported
 import config from './config/default';
-
+import {registerUser} from "./libs/register";
 const app = express();
 const server = http.createServer(app);
 
@@ -21,7 +21,6 @@ app.use("/auth", loginRoute);
 
 // Initialize Socket.IO
 initSocketServer(server);
-
 // Start the server
 server.listen(config.port, () => {
     logger.info(`Server running on http://localhost:${config.port}`);

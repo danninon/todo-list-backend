@@ -1,17 +1,19 @@
 import express, { Request, Response } from "express";
-import { v4 as uuidv4 } from "uuid";
-import { userConnectionTokens, RegisteredUser } from "../services/auth";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
 import config from "../config/default";
 
+import {RegisteredUser} from "../data/usersDal";
+
 const router = express.Router();
 
 // @ts-ignore
-router.post("/login", (req: Request, res: Response) => {
+router.post("/login", async (req: Request, res: Response) => {
     logger.info("Received login request");
 
     const { username, password } = req.body;
+
 
     if (!username || !password) {
         logger.warn("Login failed: Missing username or password in request");
@@ -20,14 +22,22 @@ router.post("/login", (req: Request, res: Response) => {
         });
     }
 
-    if (RegisteredUser[username] && RegisteredUser[username] === password) {
+    const hashedPassword = RegisteredUser[username]; // Get stored hashed password
+    if (!hashedPassword) {
+        logger.warn(`Login failed: User ${username} not found`);
+        return res.status(401).json({ error: "Invalid username or password" });
+    }
+    // console.log("hashedPassword: ", hashedPassword);
+    // console.log("password: ", password);
+    const isPasswordValid = await bcrypt.compare(password, hashedPassword); // Compare passwords
+    // console.log("isPasswordValid: ", isPasswordValid);
+    if (isPasswordValid) {
         const token = jwt.sign(
-    { id: username, username },
+    // { id: username, username },
+            {id: username},
             config.jwtSecret,
-    { expiresIn: "1h" }
+    { expiresIn: config.jwtExpireTime }
         );
-
-
         logger.info(`Login successful for user: ${username}`);
         return res.status(200).json({ message: "Login successful", token });
     }
