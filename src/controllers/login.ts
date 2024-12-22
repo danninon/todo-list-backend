@@ -27,10 +27,7 @@ router.post("/login", async (req: Request, res: Response) => {
         logger.warn(`Login failed: User ${username} not found`);
         return res.status(401).json({ error: "Invalid username or password" });
     }
-    // console.log("hashedPassword: ", hashedPassword);
-    // console.log("password: ", password);
     const isPasswordValid = await bcrypt.compare(password, hashedPassword); // Compare passwords
-    // console.log("isPasswordValid: ", isPasswordValid);
     if (isPasswordValid) {
         const token = jwt.sign(
     // { id: username, username },

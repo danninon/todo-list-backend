@@ -579,3 +579,38 @@
 [2024-12-22T11:38:47.043] [INFO] default - On io.use(socket,next)=>{....}
 [2024-12-22T11:38:47.044] [INFO] default - ⚡: xexax5O1pZ9y5CwKAAAE user just connected!
 [2024-12-22T11:38:47.048] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:20:36.935] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:24:38.402] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:26:41.897] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:26:55.976] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:27:22.833] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:27:33.304] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:27:33.309] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:29:55.439] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:29:55.444] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:30:05.253] [INFO] default - Received login request
+[2024-12-22T14:30:05.304] [INFO] default - Login successful for user: dan
+[2024-12-22T14:30:05.339] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:30:05.342] [INFO] default - ⚡: NhXAtoayOzWZ-8_HAAAB user just connected!
+[2024-12-22T14:30:05.345] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:30:16.704] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:30:16.705] [INFO] default - ⚡: hAMQW5Ev1SOQd_05AAAD user just connected!
+[2024-12-22T14:30:16.707] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:30:17.673] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:30:17.675] [INFO] default - ⚡: BGJjRAz9BtyG94uCAAAF user just connected!
+[2024-12-22T14:30:17.680] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:30:18.353] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:30:18.354] [INFO] default - ⚡: -wEUboydIxCGOkCcAAAH user just connected!
+[2024-12-22T14:30:18.356] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:30:18.849] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:30:18.851] [INFO] default - ⚡: 9sPgncCX_BwSA5a1AAAJ user just connected!
+[2024-12-22T14:30:18.853] [INFO] default - In 'getAllTodos'
+[2024-12-22T14:31:10.505] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:31:10.510] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:31:10.665] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:31:10.669] [INFO] default - ⚡: q4l3p0_-oLqdh0mAAAAB user just connected!
+[2024-12-22T14:31:25.796] [INFO] default - Serving frontend from: C:\Users\Danni\WebstormProjects\todo-list\client\dist
+[2024-12-22T14:31:25.801] [INFO] default - Server running on http://localhost:4000
+[2024-12-22T14:31:26.889] [INFO] default - On io.use(socket,next)=>{....}
+[2024-12-22T14:31:26.892] [INFO] default - ⚡: WtQf76RS91cyqlYgAAAC user just connected!
+[2024-12-22T14:31:26.896] [INFO] default - In 'getAllTodos'

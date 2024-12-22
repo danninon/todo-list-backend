@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
 import http from "http";
+import path from "path";
 import { initSocketServer } from "./socket/socket";
 import { loginRoute } from "./controllers/login";
-// import { todoRoute } from "./controllers/todo";
-import  logger  from "./libs/logger"; // Ensure logger is imported
-import config from './config/default';
-import {registerUser} from "./libs/register";
+import logger from "./libs/logger"; // Ensure logger is imported
+import config from "./config/default";
+
 const app = express();
 const server = http.createServer(app);
 
@@ -19,8 +19,18 @@ app.use(cors());
 app.use("/auth", loginRoute);
 // app.use("/api", todoRoute);
 
+// Serve the frontend
+const frontendPath = path.join(__dirname, "../../client/dist"); // Adjust path as needed
+app.use(express.static(frontendPath));
+logger.info("Serving frontend from:", frontendPath);
+// Fallback for React Router
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(frontendPath, "index.html"));
+});
+
 // Initialize Socket.IO
 initSocketServer(server);
+
 // Start the server
 server.listen(config.port, () => {
     logger.info(`Server running on http://localhost:${config.port}`);
