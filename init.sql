@@ -3,13 +3,9 @@ CREATE TABLE todo_items (
     text TEXT NOT NULL,             -- The text of the todo
     time_stamp TEXT NOT NULL,       -- Timestamp in string format
     user_id VARCHAR(255) NOT NULL   -- User ID
+);
 
 CREATE TABLE users (
     id VARCHAR(255) PRIMARY KEY, -- Unique user ID
     password TEXT NOT NULL       -- Hashed password
 );
-
-docker run
---name postgres-todo -e
-POSTGRES_USER=todo_user -e
-POSTGRES_PASSWORD=todo_pass -e POSTGRES_DB=todo_db -p 5432:5432 -d postgres

@@ -5,8 +5,8 @@
   "main": "src/app.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "tsc && node dist/index.js"
+    "start": "node dist/app.js",
+    "dev": "tsc && node dist/app.js"
   },
   "keywords": [],
   "author": "",
