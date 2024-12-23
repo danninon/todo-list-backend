@@ -8,7 +8,9 @@ export default {
     // apiBaseUrl: process.env.API_BASE_URL || 'http://api.weatherapi.com/v1',
     environment: process.env.NODE_ENV || 'development',
     jwtSecret: process.env.JWT_SECRET || 'my_secret_key',
-    jwtExpireTime: process.env.JWT_EXPIRE_TIME || "1h"
+    jwtExpireTime: process.env.JWT_EXPIRE_TIME || "1h",
+
+    servesFront: process.env.SERVES_FRONT || true
     // swaggerURL: process.env.SWAGGER_URL || '/api-docs',
     // axios: {
     //     timeout: 10000,
