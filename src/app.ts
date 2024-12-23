@@ -22,17 +22,18 @@ app.use("/auth", loginRoute);
 // app.use("/api", todoRoute);
 
 // Serve the frontend
-const frontendPath = path.join(__dirname, "../../client/dist"); // Adjust path as needed
-app.use(express.static(frontendPath));
-logger.info("Serving frontend from:", frontendPath);
+// const frontendPath = path.join(__dirname, "../../client/dist"); // Adjust path as needed
+// app.use(express.static(frontendPath));
 
-
-if(config.servesFront) {
-    app.get("*", (req, res) => {
-        // logger.info("Serving react files...");
-        res.sendFile(path.resolve(frontendPath, "index.html"));
-    });
-}
+// if(!config.servesFront) {
+//     const frontendPath = path.join(__dirname, "../client/dist"); // Adjust path as needed
+//     app.use(express.static(frontendPath));
+//     logger.info("Serving frontend from:", frontendPath);
+//     app.get("*", (req, res) => {
+//         // logger.info("Serving react files...");
+//         res.sendFile(path.resolve(frontendPath, "index.html"));
+//     });
+// }
 
 // Initialize Socket.IO
 initSocketServer(server);
