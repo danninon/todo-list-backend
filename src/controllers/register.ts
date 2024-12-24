@@ -13,6 +13,10 @@ const saltRounds = 10
 // @ts-ignore
 router.post("/register", async (req: Request, res: Response) => {
     logger.info("Received register request");
+
+        const { userId, password } = req.body;
+        // Log the incoming username and password for debugging
+        logger.info(`Received register request: username=${userId}, password=${password}`);
     try {
         const {userId, password} = req.body
         const exists = await getUser(userId);
