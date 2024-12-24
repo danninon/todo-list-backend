@@ -1,0 +1,19 @@
+name: Deploy to EC2
+
+on:
+  workflow_run:
+    workflows: [ "Docker Image CI" ]
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - name: Pull Docker
+      run: docker pull danninon/todo-list-backend:main
+    - name: Remove Containers
+      run: docker compose down
+    - name: Run Docker Containers Detached
+      run: docker compose up -d
