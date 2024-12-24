@@ -1,8 +1,6 @@
 services:
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: danninon/todo-list-backend:main
     ports:
       - "${SERVER_PORT}:${SERVER_PORT}"
     environment:
