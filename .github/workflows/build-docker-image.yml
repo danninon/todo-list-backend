@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag todo-list-backend:main
       
     - name: Push to Dockerhub
-      run: docker push danninon/todo-list-backend:latest
+      run: docker push danninon/todo-list-backend:main
