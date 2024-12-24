@@ -17,12 +17,6 @@ jobs:
         run: cd /home/ubuntu/todo-list-backend
       - name: Pull Docker
         run: docker pull danninon/todo-list-backend:main
-      - name: Debug - List Current Directory
-        run: ls -l
-      - name: Debug - Print Current Directory
-        run: pwd
-      - name: Debug - List Specific Path
-        run: ls -l /home/ubuntu/todo-list-backend
       - name: Remove Containers
         working-directory: /home/ubuntu/todo-list-backend
         run: docker compose down
