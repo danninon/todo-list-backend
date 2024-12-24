@@ -1,11 +1,10 @@
 import {Server as IOServer, Socket} from "socket.io";
-import { Builder, parseStringPromise } from "xml2js";
-import { addTodo, getAllTodos, deleteTodo } from "../db/todosPostgresDal"; // Import todo service functions
-import { userConnectionTokens } from "../services/auth";
+import {Builder, parseStringPromise} from "xml2js";
+import {addTodo, deleteTodo, getAllTodos} from "../db/todosPostgresDal";
 import {DataValidator} from "../db/validator";
-import  logger  from "../libs/logger";
+import logger from "../libs/logger";
 
-const userSocketConnections: { [key: string]: string } = {}; // Map socket.id to userId
+const userSocketConnections: { [key: string]: string } = {};
 
 export class SocketHandler {
     private socket: Socket;
@@ -22,7 +21,7 @@ export class SocketHandler {
         const userId = this.socket.data.user.id;
         if (!userId) {
             logger.warn(`Unauthorized attempt to add a todo from socket: ${this.socket.id}`);
-            const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+            const errorResponse = new Builder().buildObject({error: "Unauthorized"});
             this.socket.emit("error", errorResponse);
             return;
         }
@@ -30,7 +29,7 @@ export class SocketHandler {
         const allTodos = await getAllTodos();
         const xmlResponse = new Builder().buildObject({
             todos: {
-                todo: allTodos, // Ensure allTodos is properly structured
+                todo: allTodos,
             },
         });
         this.io.emit("todos", xmlResponse);
@@ -39,15 +38,13 @@ export class SocketHandler {
     async handleAddTodo(xmlPayload: string) {
         try {
             logger.info("Received XML payload for addTodo:", xmlPayload);
-            // console.log('socket.db.user',this.socket.db.user)
-
-            const parsedPayload = await parseStringPromise(xmlPayload, { explicitArray: false });
+            const parsedPayload = await parseStringPromise(xmlPayload, {explicitArray: false});
             const todoPayload = parsedPayload.todo;
 
             const userId = this.socket.data.user.id;
             if (!userId) {
                 logger.warn(`Unauthorized attempt to add a todo from socket: ${this.socket.id}`);
-                const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+                const errorResponse = new Builder().buildObject({error: "Unauthorized"});
                 this.socket.emit("error", errorResponse);
                 return;
             }
@@ -57,13 +54,9 @@ export class SocketHandler {
                 timeStamp: todoPayload.timestamp,
                 userId,
             };
-
-           this.dataValidator.validate(todoWithoutID);
-
+            this.dataValidator.validate(todoWithoutID);
             const newTodo = await addTodo(todoWithoutID);
-            logger.log("newTodo(back from db): ", newTodo)
             const allTodos = await getAllTodos();
-            logger.log("allTodos(back from db): ", allTodos);
             const xmlTodos = {
                 todos: {
                     todo: allTodos,
@@ -72,26 +65,23 @@ export class SocketHandler {
 
             const xmlResponse = new Builder().buildObject(xmlTodos);
             this.io.emit("todos", xmlResponse);
-            logger.info(`New xmlResponse: ${xmlResponse}`);
+            // logger.info(`New xmlResponse: ${xmlResponse}`);
         } catch (error) {
             const errorMessage = `Failed to add todo: ${error}`;
             logger.error(errorMessage);
-            const errorResponse = new Builder().buildObject({ error: errorMessage});
+            const errorResponse = new Builder().buildObject({error: errorMessage});
             this.socket.emit("error", errorResponse);
         }
     }
 
-    //TODO?: add validation
     async handleDeleteTodo(xmlPayload: string) {
         try {
             logger.info(`Received XML payload for deleteTodo: ${xmlPayload}`);
-
-            const parsedPayload = await parseStringPromise(xmlPayload, { explicitArray: false });
+            const parsedPayload = await parseStringPromise(xmlPayload, {explicitArray: false});
             const todoId = parsedPayload.todo?.id;
-
             if (!todoId) {
                 logger.error(`Invalid payload: Missing todo ID`);
-                const errorResponse = new Builder().buildObject({ error: "Invalid payload: Missing todo ID" });
+                const errorResponse = new Builder().buildObject({error: "Invalid payload: Missing todo ID"});
                 this.socket.emit("error", errorResponse);
                 return;
             }
@@ -99,7 +89,7 @@ export class SocketHandler {
             const userId = this.socket.data.user.id;
             if (!userId) {
                 logger.warn(`Unauthorized delete attempt from socket: ${this.socket.id}`);
-                const errorResponse = new Builder().buildObject({ error: "Unauthorized" });
+                const errorResponse = new Builder().buildObject({error: "Unauthorized"});
                 this.socket.emit("error", errorResponse);
                 return;
             }
@@ -115,13 +105,13 @@ export class SocketHandler {
                 this.io.emit("todos", xmlResponse);
                 logger.info(`Todo with id ${todoId} deleted successfully.`);
             } else {
-                const errorResponse = new Builder().buildObject({ error: "Todo not found or deletion failed" });
+                const errorResponse = new Builder().buildObject({error: "Todo not found or deletion failed"});
                 logger.warn("Todo not found or deletion failed");
                 this.socket.emit("error", errorResponse);
             }
         } catch (error) {
             logger.error("Error deleting todo:", error);
-            const errorResponse = new Builder().buildObject({ error: "Error processing deleteTodo request" });
+            const errorResponse = new Builder().buildObject({error: "Error processing deleteTodo request"});
             this.socket.emit("error", errorResponse);
         }
     }

@@ -1,19 +1,20 @@
-import express, { Request, Response } from "express";
+import express, {Request, Response} from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
 import config from "../config/default";
 
-// import {getUser, RegisteredUser} from "../db/usersDal";
+
 import {getUser} from "../db/usersDal";
 
 const router = express.Router();
+
 
 // @ts-ignore
 router.post("/login", async (req: Request, res: Response) => {
     logger.info("Received login request");
 
-    const { username : userId, password } = req.body;
+    const {username: userId, password} = req.body;
 
 
     if (!userId || !password) {
@@ -26,29 +27,23 @@ router.post("/login", async (req: Request, res: Response) => {
     const userDetails = await getUser(userId)
     if (!userDetails) {
         logger.warn(`Login failed: User ${userId} not found`);
-        return res.status(401).json({ error: "Invalid username or password" });
+        return res.status(401).json({error: "Invalid username or password"});
     }
 
     const {password: hashedPassword} = userDetails
-
-    // if (!hashedPassword) {
-    //     logger.warn(`Login failed: User ${username} not found`);
-    //     return res.status(401).json({ error: "Invalid username or password" });
-    // }
-    const isPasswordValid = await bcrypt.compare(password, hashedPassword); // Compare passwords
+    const isPasswordValid = await bcrypt.compare(password, hashedPassword);
     if (isPasswordValid) {
         const token = jwt.sign(
-    // { id: username, username },
             {id: userId},
             config.jwtSecret,
-    { expiresIn: config.jwtExpireTime }
+            {expiresIn: config.jwtExpireTime}
         );
         logger.info(`Login successful for user: ${userId}`);
-        return res.status(200).json({ message: "Login successful", token });
+        return res.status(200).json({message: "Login successful", token});
     }
 
     logger.warn(`Login failed: Invalid credentials for username: ${userId}`);
-    return res.status(401).json({ error: "Invalid username or password" });
+    return res.status(401).json({error: "Invalid username or password"});
 });
 
 

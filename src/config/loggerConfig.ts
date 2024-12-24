@@ -11,7 +11,7 @@ log4js.configure({
     categories: {
         default: {
             appenders: ['out', 'app'],
-            level: config.environment === 'production' ? 'error' : 'debug', // Log level changes based on environment
+            level: config.environment === 'production' ? 'error' : 'debug',
         },
     },
 });

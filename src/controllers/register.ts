@@ -1,10 +1,8 @@
-import express, { Request, Response } from "express";
+import express, {Request, Response} from "express";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
 import logger from "../libs/logger";
-import config from "../config/default";
 
-// import {getUser, RegisteredUser} from "../db/usersDal";
+
 import {getUser, setUser} from "../db/usersDal";
 
 const router = express.Router();
@@ -14,13 +12,13 @@ const saltRounds = 10
 router.post("/register", async (req: Request, res: Response) => {
     logger.info("Received register request");
 
-        const { userId, password } = req.body;
-        // Log the incoming username and password for debugging
-        logger.info(`Received register request: username=${userId}, password=${password}`);
+    const {userId, password} = req.body;
+
+    logger.info(`Received register request: username=${userId}, password=${password}`);
     try {
         const {userId, password} = req.body
         const exists = await getUser(userId);
-        const hashedPassword = await bcrypt.hash(password, saltRounds); // Hash password
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
         if (exists) {
             const errorMsg = `User: ${userId} Already exists`;
             logger.warn(errorMsg)
@@ -28,10 +26,10 @@ router.post("/register", async (req: Request, res: Response) => {
         }
         await setUser({userId, password: hashedPassword})
         logger.info(`User ${userId} registered with hashed password.`);
-        return res.status(200).json({ message: "Registered successfully" });
-    }catch(error) {
+        return res.status(200).json({message: "Registered successfully"});
+    } catch (error) {
         logger.error({error});
-        return res.status(500).json({ error});
+        return res.status(500).json({error});
     }
 });
 
