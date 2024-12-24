@@ -1,0 +1,27 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login Dockerhub
+      env: 
+        DOCKER_USERNAME: ${{secret.DOCKER_USERNAME}}
+        DOCKER_PASSWORD: ${{secret.DOCKER_PASSWORD}}
+      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag todo-list-backend:main
+      
+    - name: Push to Dockerhub
+      run: docker push danninon/todo-list-backend:latest
