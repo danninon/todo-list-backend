@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Pull Docker
       run: docker pull danninon/todo-list-backend:main
+    - name: Debug
+      run: ls
     - name: Remove Containers
       run: docker compose down
     - name: Run Docker Containers Detached
